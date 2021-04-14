@@ -1,0 +1,577 @@
+        -:    0:Source:src/simple_calculations.c
+        -:    0:Programs:3
+        -:    1:/**
+        -:    2: * @file calc.c
+        -:    3: * @author Hrushikar Teja K (hrushikarteja.k@gmail.com)
+        -:    4: * @brief 
+        -:    5: * @version 0.1
+        -:    6: * @date 2021-04-10
+        -:    7: * 
+        -:    8: * @copyright Copyright (c) 2021
+        -:    9: * 
+        -:   10: */
+        -:   11:
+        -:   12:#include<stdlib.h>
+        -:   13:#include<stdio.h>
+        -:   14:#include<string.h>
+        -:   15:#include<math.h>
+        -:   16:#include<float.h>
+        -:   17:#include<limits.h>
+        -:   18:
+        -:   19:#include "../inc/calc.h"
+        -:   20:#include "../inc/calcy.h"
+        -:   21:#include "../inc/delay.h"
+        -:   22:
+        -:   23:// #include "calc.h"
+        -:   24:
+        -:   25:/**
+        -:   26: * @brief 
+        -:   27: * 
+        -:   28: * @param flag 
+        -:   29: * @return error_t 
+        -:   30: */
+       24:   31:error_t checkIntegers(int flag){ //}, long long int val){ //}, char operation){
+       24:   31-block  0
+       24:   32:    if(flag){
+       24:   32-block  0
+        -:   33:        // printf("\n\nValue Out of Range!!!\n");
+        4:   34:        return ERROR_OUT_OF_RANGE;
+        4:   34-block  0
+        -:   35:    }
+        -:   36:    // else{
+        -:   37:    //     char op[15];
+        -:   38:    //     if(operation=='a'){
+        -:   39:    //         strcpy(op, "Sum");
+        -:   40:    //     }
+        -:   41:    //     else if(operation=='s'){
+        -:   42:    //         strcpy(op, "Difference");
+        -:   43:    //     }
+        -:   44:    //     else if(operation=='m'){
+        -:   45:    //         strcpy(op, "Product");
+        -:   46:    //     }
+        -:   47:    //     printf("\n\n%s: %lld\n", op, val);
+        -:   48:    // }
+       20:   49:    return SUCCESS;
+       20:   49-block  0
+        -:   50:}
+        -:   51:
+        -:   52:
+        -:   53:/**
+        -:   54: * @brief 
+        -:   55: * 
+        -:   56: * @param flag 
+        -:   57: * @return error_t 
+        -:   58: */
+       23:   59:error_t checkDouble(int flag){ //}, double val){ //}, char operation){
+       23:   59-block  0
+       23:   60:    if(flag){
+       23:   60-block  0
+        -:   61:        // printf("\n\nValue Out of Range!!!\n");
+        3:   62:        return ERROR_OUT_OF_RANGE;
+        3:   62-block  0
+        -:   63:    }
+        -:   64:    // else{
+        -:   65:    //     char op[15];
+        -:   66:    //     if(operation=='a'){
+        -:   67:    //         strcpy(op, "Sum");
+        -:   68:    //     }
+        -:   69:    //     else if(operation=='s'){
+        -:   70:    //         strcpy(op, "Difference");
+        -:   71:    //     }
+        -:   72:    //     else if(operation=='m'){
+        -:   73:    //         strcpy(op, "Product");
+        -:   74:    //     }
+        -:   75:    //     printf("\n\n%s: %lf\n", op, val);
+        -:   76:    // }
+       20:   77:    return SUCCESS;
+       20:   77-block  0
+        -:   78:}
+        -:   79:
+        -:   80:
+        -:   81:/**
+        -:   82: * @brief 
+        -:   83: * 
+        -:   84: * @param flag 
+        -:   85: * @return error_t 
+        -:   86: */
+        8:   87:error_t checkDivision(int flag){ //}, double val){
+        8:   87-block  0
+        8:   88:    if(flag==1){
+        8:   88-block  0
+        -:   89:        // printf("\n\nValue Out of Range!!!\n");
+        2:   90:        return ERROR_OUT_OF_RANGE;
+        2:   90-block  0
+        -:   91:    }
+        6:   92:    else if(flag==2){
+        6:   92-block  0
+        -:   93:        // printf("\n\nDivision by zero is not peritted!!!\n");
+        1:   94:        return ERROR_DIV_BY_ZERO;
+        1:   94-block  0
+        -:   95:    }
+        -:   96:    // else{
+        -:   97:    //     printf("\n\nQuotient: %Lf\n", val);
+        -:   98:    // }
+        -:   99:    // printf("\nExiting in 5 seconds...");
+        -:  100:    // delay(5);
+        5:  101:    return SUCCESS;
+        5:  101-block  0
+        -:  102:}
+        -:  103:
+        -:  104:
+        -:  105:/**
+        -:  106: * @brief 
+        -:  107: * 
+        -:  108: * @param a 
+        -:  109: * @param b 
+        -:  110: * @param res 
+        -:  111: * @return error_t 
+        -:  112: */
+        6:  113:error_t add(long int* a, long int* b, long int* res){
+        6:  113-block  0
+        -:  114:    // long long int number, sum=0, a;
+        -:  115:    // int flag=0;
+        -:  116:    // printf("\nInteger Addition:\n\nEnter the number of integers you want to add: ");
+        -:  117:    // scanf("%lld", &number);
+        -:  118:    // printf("\nEnter the numbers you want to add:\n");
+        -:  119:    // for(long long int i=0; i<number; i++){
+        -:  120:        // scanf("%lld", &a);
+        -:  121:        // if(LLONG_MAX<(sum+a) || LLONG_MIN>(sum+a)){
+        -:  122:            // flag = 1;
+        -:  123:            // break;
+        -:  124:        // }
+        -:  125:        // sum+=a;
+        -:  126:        // 
+        -:  127:    // }
+        -:  128:
+        6:  129:    int flag = 0;
+        -:  130:
+        6:  131:    if((LONG_MAX==(*a) && LONG_MIN==(*b)) || (LONG_MIN==(*a) && LONG_MAX==(*b))){
+        6:  131-block  0
+        1:  131-block  1
+        5:  131-block  2
+    $$$$$:  131-block  3
+        1:  132:        flag = 1;
+        1:  132-block  0
+        -:  133:    }
+        -:  134:
+        -:  135:    // if((*a)>=0 && (*b)>=0){
+        -:  136:    //     if((*a)+(*b)<0){
+        -:  137:    //         flag = 1;
+        -:  138:    //         // *res = (*a) + (*b);
+        -:  139:    //     }
+        -:  140:    // }
+        -:  141:    // else if((*a)<0 && (*b)<0){
+        -:  142:    //     if(((*a)+(*b))==0){
+        -:  143:    //         flag = 1;
+        -:  144:    //         // *res = (*a) + (*b);
+        -:  145:    //     }
+        -:  146:    // }
+        -:  147:    // else{
+        6:  148:        *res = (*a) + (*b);
+        -:  149:    // }
+        -:  150:    // printf("%d", *res);
+        -:  151:    // if(LLONG_MAX<((*a)+(*b)) || LLONG_MIN>((*a)+(*b))){
+        -:  152:        // flag = 1;
+        -:  153:        // *res = (*a) + (*b);
+        -:  154:    // }
+        -:  155:    // else{
+        -:  156:        // *res = (*a) + (*b);
+        -:  157:    // }
+        6:  158:    return checkIntegers(flag); //, *res); //, 'a');
+        6:  158-block  0
+        -:  159:}
+        -:  160:
+        -:  161:
+        -:  162:/**
+        -:  163: * @brief 
+        -:  164: * 
+        -:  165: * @param ad 
+        -:  166: * @param bd 
+        -:  167: * @param cd 
+        -:  168: * @return error_t 
+        -:  169: */
+        6:  170:error_t addDouble(double* ad, double* bd, double* cd){
+        6:  170-block  0
+        -:  171:    // double sum=0.0, a;
+        -:  172:    // long long int number;
+        -:  173:    // int flag=0;
+        -:  174:    // printf("\nDecimal number Addition:\n\nEnter the number of decimal numbers you want to add: ");
+        -:  175:    // scanf("%lld", &number);
+        -:  176:    // printf("\nEnter the numbers you want to add:\n");
+        -:  177:    // for(long long int i=0; i<number; i++){
+        -:  178:    //     scanf("%lf", &a);
+        -:  179:    //     if(DBL_MAX<(sum+a) || (-DBL_MAX)>(sum+a)){
+        -:  180:    //         flag = 1;
+        -:  181:    //         break;
+        -:  182:    //     }
+        -:  183:    //     sum+=a;
+        -:  184:        
+        -:  185:    // }
+        -:  186:
+        6:  187:    int flag = 0;
+        -:  188:    // if((*ad)>=0 && (*bd)>=0){}
+        -:  189:    // if(DBL_MAX<((*ad)+(*bd)) || (-DBL_MAX)>((*ad)+(*bd))){
+        6:  190:    if((DBL_MAX==(*ad) && DBL_MAX==(*bd)) || ((-DBL_MAX)==(*ad) && (-DBL_MAX)==(*bd))){
+        6:  190-block  0
+        1:  190-block  1
+        5:  190-block  2
+    $$$$$:  190-block  3
+        1:  191:        flag = 1;
+        1:  191-block  0
+        -:  192:        // *cd = (*ad) + (*bd);
+        -:  193:    }
+        -:  194:    // else{
+        6:  195:        *cd = (*ad) + (*bd);
+        -:  196:    // }
+        6:  197:    return checkDouble(flag); //, sum); //, 'a');
+        6:  197-block  0
+        -:  198:}
+        -:  199:
+        -:  200:
+        -:  201:/**
+        -:  202: * @brief 
+        -:  203: * 
+        -:  204: * @param a 
+        -:  205: * @param b 
+        -:  206: * @param res 
+        -:  207: * @return error_t 
+        -:  208: */
+        8:  209:error_t subtract(long int* a, long int* b, long int* res){
+        8:  209-block  0
+        -:  210:    // long long int number, difference, a;
+        -:  211:    // int flag=0;
+        -:  212:    // printf("\nInteger Subtraction:\n\nEnter the number of integers you want to subtract: ");
+        -:  213:    // scanf("%lld", &number);
+        -:  214:    // printf("\nEnter the numbers you want to add:\n");
+        -:  215:    // for(long long int i=0; i<number; i++){
+        -:  216:    //     scanf("%lld", &a);
+        -:  217:        
+        -:  218:    //     if(LLONG_MAX<(difference-a) || LLONG_MIN>(difference-a)){
+        -:  219:    //         flag = 1;
+        -:  220:    //         break;
+        -:  221:    //     }
+        -:  222:    //     if(i>0){
+        -:  223:    //         difference-=a;
+        -:  224:    //     }
+        -:  225:    //     else if(i==0){
+        -:  226:    //         difference = a;
+        -:  227:    //     }
+        -:  228:    // }
+        8:  229:    int flag = 0;
+        8:  230:    if((*a)<0 && (*b)>0){
+        8:  230-block  0
+        4:  230-block  1
+        3:  231:        if((*a)-(*b)>0){
+        2:  231-block  0
+        2:  231-block  1
+        1:  232:            flag = 1;
+        1:  232-block  0
+        -:  233:            // *res = (*a) + (*b);
+        -:  234:        }
+        -:  235:    }
+        6:  236:    else if((*a)>0 && (*b)<0){
+        6:  236-block  0
+        3:  236-block  1
+    #####:  237:        if(((*a)-(*b))<0){
+    $$$$$:  237-block  0
+    #####:  238:            flag = 1;
+    $$$$$:  238-block  0
+        -:  239:            // *res = (*a) + (*b);
+        -:  240:        }
+        -:  241:    }
+        -:  242:    // else{
+        8:  243:    *res = (*a) - (*b);
+        -:  244:    // }
+        8:  245:    return checkIntegers(flag); //, difference); //, 's');
+        8:  245-block  0
+        -:  246:}
+        -:  247:
+        -:  248:
+        -:  249:/**
+        -:  250: * @brief 
+        -:  251: * 
+        -:  252: * @param ad 
+        -:  253: * @param bd 
+        -:  254: * @param cd 
+        -:  255: * @return error_t 
+        -:  256: */
+        9:  257:error_t subtractDouble(double* ad, double* bd, double* cd){
+        9:  257-block  0
+        -:  258:    // double difference, a;
+        -:  259:    // long long int number;
+        -:  260:    // int flag=0;
+        -:  261:    // printf("\nDecimal number Subtraction:\n\nEnter the number of decimal numbers you want to subtract: ");
+        -:  262:    // scanf("%lld", &number);
+        -:  263:    // printf("\nEnter the numbers you want to add:\n");
+        -:  264:    // for(long long int i=0; i<number; i++){
+        -:  265:    //     scanf("%lf", &a);
+        -:  266:    //     if(DBL_MAX<(difference-a) || (-DBL_MAX)>(difference-a)){
+        -:  267:    //         flag = 1;
+        -:  268:    //         break;
+        -:  269:    //     }
+        -:  270:    //     if(i>0){
+        -:  271:    //         difference-=a;
+        -:  272:    //     }
+        -:  273:    //     else if(i==0){
+        -:  274:    //         difference = a;
+        -:  275:    //     }
+        -:  276:    // }
+        9:  277:    int flag = 0;
+        9:  278:    if((*ad)>0 && (*bd)<0){
+        9:  278-block  0
+        5:  278-block  1
+        2:  279:        if(((*ad)-(*bd))>DBL_MAX){
+        2:  279-block  0
+        1:  280:            flag = 1;
+        1:  280-block  0
+        -:  281:            // *res = (*a) + (*b);
+        -:  282:        }
+        -:  283:    }
+        -:  284:    // if(DBL_MAX<((*ad)-(*bd)) || (-DBL_MAX)>((*ad)-(*bd))){
+        -:  285:        // flag = 1;
+        -:  286:        // *cd = (*ad) - (*bd);
+        -:  287:    // }
+        -:  288:
+        -:  289:    // else{
+        9:  290:        *cd = (*ad) - (*bd);
+        -:  291:    // }
+        9:  292:    return checkDouble(flag); //, difference); //, 's');
+        9:  292-block  0
+        -:  293:}
+        -:  294:
+        -:  295:/**
+        -:  296: * @brief 
+        -:  297: * 
+        -:  298: * @param a 
+        -:  299: * @param b 
+        -:  300: * @param res 
+        -:  301: * @return error_t 
+        -:  302: */
+       10:  303:error_t multiply(long int* a, long int* b, long int* res){
+       10:  303-block  0
+        -:  304:    // long long int number, product=1, a;
+        -:  305:    // int flag=0;
+        -:  306:    // printf("\nInteger Multiplication:\n\nEnter the number of integers you want to multiply: ");
+        -:  307:    // scanf("%lld", &number);
+        -:  308:    // printf("\nEnter the numbers you want to multiply:\n");
+        -:  309:    // for(long long int i=0; i<number; i++){
+        -:  310:    //     scanf("%lld", &a);
+        -:  311:    //     if(LLONG_MAX<(product*a) || LLONG_MIN>(product*a)){
+        -:  312:    //         flag = 1;
+        -:  313:    //         break;
+        -:  314:    //     }
+        -:  315:    //     product*=a;
+        -:  316:        
+        -:  317:    // }
+        -:  318:
+       10:  319:    int flag = 0;
+        -:  320:    // if(LONG_MAX<((*a)*(*b)) || LONG_MIN>((*a)*(*b))){
+        -:  321:    //     flag = 1;
+        -:  322:    //     // *res = (*a) * (*b);
+        -:  323:    // }
+       10:  324:    if((LONG_MAX==(*a) && LONG_MIN==(*b)) || (LONG_MIN==(*a) && LONG_MAX==(*b))){
+       10:  324-block  0
+        1:  324-block  1
+        9:  324-block  2
+        1:  324-block  3
+        2:  325:        flag = 1;
+        2:  325-block  0
+        -:  326:    }
+        -:  327:    // else{
+       10:  328:        *res = (*a) * (*b);
+        -:  329:    // }
+       10:  330:    return checkIntegers(flag); //, product); //, 'm');
+       10:  330-block  0
+        -:  331:}
+        -:  332:
+        -:  333:/**
+        -:  334: * @brief 
+        -:  335: * 
+        -:  336: * @param ad 
+        -:  337: * @param bd 
+        -:  338: * @param cd 
+        -:  339: * @return error_t 
+        -:  340: */
+        8:  341:error_t multiplyDouble(double* ad, double* bd, double* cd){
+        8:  341-block  0
+        -:  342:    // double product=1.0, a;
+        -:  343:    // long long int number;
+        -:  344:    // int flag=0;
+        -:  345:    // printf("\nDecimal number Multiplication:\n\nEnter the number of decimal numbers you want to multiply: ");
+        -:  346:    // scanf("%lld", &number);
+        -:  347:    // printf("\nEnter the numbers you want to multiply:\n");
+        -:  348:    // for(long long int i=0; i<number; i++){
+        -:  349:    //     scanf("%lf", &a);
+        -:  350:    //     if(DBL_MAX<(product*a) || (-DBL_MAX)>(product*a)){
+        -:  351:    //         flag = 1;
+        -:  352:    //         break;
+        -:  353:    //     }
+        -:  354:    //     product*=a;
+        -:  355:        
+        -:  356:    // }
+        -:  357:
+        8:  358:    int flag = 0;
+        -:  359:    // if(DBL_MAX<((*ad)*(*bd)) || (-DBL_MAX)>((*ad)*(*bd))){
+        -:  360:        // flag = 1;
+        -:  361:        // *cd = (*ad) * (*bd);
+        -:  362:    // }
+        8:  363:    if((DBL_MAX==(*ad) && -DBL_MAX==(*bd)) || (-DBL_MAX==(*ad) && DBL_MAX==(*bd))){
+        8:  363-block  0
+        1:  363-block  1
+        7:  363-block  2
+    $$$$$:  363-block  3
+        1:  364:        flag = 1;
+        1:  364-block  0
+        -:  365:    }
+        -:  366:    // else{
+        8:  367:        *cd = (*ad) * (*bd);
+        -:  368:    // }
+        8:  369:    return checkDouble(flag); //, product); //, 'm');
+        8:  369-block  0
+        -:  370:}
+        -:  371:
+        -:  372:
+        -:  373:/**
+        -:  374: * @brief 
+        -:  375: * 
+        -:  376: * @param ad 
+        -:  377: * @param bd 
+        -:  378: * @param cd 
+        -:  379: * @return error_t 
+        -:  380: */
+        8:  381:error_t divide(double* ad, double* bd, double* cd){
+        8:  381-block  0
+        -:  382:    // double quotient, a;
+        -:  383:    // long long int number;
+        -:  384:    // int flag=0;
+        -:  385:    // printf("\nDivision:\n\nEnter the number of numbers you want to divide: ");
+        -:  386:    // scanf("%lld", &number);
+        -:  387:    // printf("\nEnter the numbers you want to multiply:\n");
+        -:  388:    // for(long long int i=0; i<number; i++){
+        -:  389:    //     scanf("%lf", &a);
+        -:  390:    //     if(a==0 && i>0){
+        -:  391:    //         flag = 2;
+        -:  392:    //         break;
+        -:  393:    //     }
+        -:  394:    //     if(DBL_MAX<(quotient/a) || (-DBL_MAX)>(quotient/a)){
+        -:  395:    //         flag = 1;
+        -:  396:    //         break;
+        -:  397:    //     }
+        -:  398:    //     if(i>0){
+        -:  399:    //         quotient/=a;
+        -:  400:    //         // printf("\nInter quot: %lf\n",quotient);
+        -:  401:    //     }
+        -:  402:    //     else if(i==0){
+        -:  403:    //         quotient = a;
+        -:  404:    //         // printf("\nInter quot: %lf\n",quotient);
+        -:  405:    //     }   
+        -:  406:    // }
+        -:  407:
+        8:  408:    int flag = 0;
+        -:  409:    // if(DBL_MAX<((*ad)/(*bd)) || (-DBL_MAX)>((*ad)/(*bd))){
+        -:  410:        // flag = 1;
+        -:  411:        // *cd = (*ad)/(*bd);
+        -:  412:        // return checkDivision(flag);
+        -:  413:    // }
+        8:  414:    if(((DBL_MAX==(*ad) && 1>(*bd)) || (DBL_MAX==(*bd) && 1>(*ad))) || ((-DBL_MAX==(*ad) && 1>(*bd)) || (-DBL_MAX==(*bd) && 1>(*ad)))){
+        8:  414-block  0
+    $$$$$:  414-block  1
+        8:  414-block  2
+        1:  414-block  3
+        7:  414-block  4
+        1:  414-block  5
+        6:  414-block  6
+    $$$$$:  414-block  7
+        2:  415:        flag = 1;
+        2:  416:        *cd = OVERFLOW;
+        2:  417:        return checkDivision(flag);
+        2:  417-block  0
+        -:  418:    }
+        6:  419:    if((*bd)==0){
+        6:  419-block  0
+        1:  420:        flag = 2;
+        1:  421:        *cd = UNDERFLOW;
+        1:  422:        return checkDivision(flag);
+        1:  422-block  0
+        -:  423:    }
+        -:  424:    // if(flag==0){
+        5:  425:        *cd = (*ad)/(*bd);
+        -:  426:    // }
+        5:  427:    return checkDivision(flag); //, quotient);
+        5:  427-block  0
+        -:  428:}
+        -:  429:
+        -:  430:
+        -:  431:/**
+        -:  432: * @brief 
+        -:  433: * 
+        -:  434: * @param ad 
+        -:  435: * @param bd 
+        -:  436: * @param cd 
+        -:  437: * @param resd1 
+        -:  438: * @param resd2 
+        -:  439: * @return error_t 
+        -:  440: */
+        8:  441:error_t solveQuadratic(double* ad, double* bd, double* cd, double* resd1, double* resd2){
+        8:  441-block  0
+        -:  442:    // double a, b, c, discriminant, x1, x2;
+        -:  443:    // printf("\nSolve for the zeroes of the quadratic equation:\n\n");
+        -:  444:    // printf("\nEnter the coefficients of x**2 (a), x**1 (b) and x**0 (c): ");
+        -:  445:    // scanf("%lf", &a);
+        -:  446:    // scanf("%lf", &b);
+        -:  447:    // scanf("%lf", &c);
+        -:  448:    // double x1 = (-1)*(*b);
+        -:  449:    // double x2 = (-1)*(*b);
+        -:  450:
+        8:  451:    if(0==(*ad) && 0==(*bd) && 0==(*cd)){
+        8:  451-block  0
+        1:  451-block  1
+        1:  451-block  2
+        1:  452:        *resd1 = UNDERFLOW;
+        1:  453:        *resd2 = UNDERFLOW;
+        1:  454:        return ERROR_NO_EQUATION_POSSIBLE;
+        1:  454-block  0
+        -:  455:    }
+        -:  456:    
+        7:  457:    *resd1 = (-1)*(*bd);
+        7:  458:    *resd2 = (-1)*(*bd);
+        -:  459:    
+        7:  460:    double b_sqr = pow((*bd), 2);
+        7:  461:    double ac4 = (4 * (*ad) * (*cd));
+        7:  462:    double a2 = (2*(*ad));
+        -:  463:
+        7:  464:    if(b_sqr==ac4){
+        7:  464-block  0
+        2:  465:        *resd1 = *resd1/(2*(*ad));
+        2:  466:        *resd2 = *resd2/(2*(*ad));
+        2:  467:        return SUCCESS;
+        2:  467-block  0
+        -:  468:    }
+        -:  469:
+        -:  470:    else{
+        5:  471:    double discriminant = b_sqr - ac4; //((*bd)*(*bd))-(4*(*ad)*(*cd));
+        5:  472:    if(discriminant<0){
+        5:  472-block  0
+        -:  473:        // printf("\nNo real solutions are possible for the given set of coefficients\n");
+        -:  474:        // printf("\nExiting in 5 seconds...");
+        -:  475:        // delay(5);
+        2:  476:        *resd1 = UNDERFLOW;
+        2:  477:        *resd2 = UNDERFLOW;
+        2:  478:        return ERROR_NO_REAL_SOLUTION;
+        2:  478-block  0
+        -:  479:    }
+        -:  480:    // else if(discriminant==0){
+        -:  481:    //     *resd1 = *resd1/(2*(*ad));
+        -:  482:    //     *resd2 = *resd2/(2*(*ad));
+        -:  483:    //     return SUCCESS;
+        -:  484:    // }
+        -:  485:    else{
+        3:  486:        *resd1 = ((*resd1) + sqrt(discriminant)) / a2; //(2*(*ad));
+        3:  487:        *resd2 = ((*resd2) - sqrt(discriminant)) / a2; //(2*(*ad));
+        3:  488:        return SUCCESS;
+        3:  488-block  0
+        -:  489:    }}
+        -:  490:    // printf("Zeroes of the quadratic equation with coefficients %lf, %lf and %lf are:\nx1: %lf\nx2: %lf", a, b, c, x1, x2);
+        -:  491:    // printf("\nExiting in 5 seconds...");
+        -:  492:    // delay(5);
+        -:  493:}

@@ -1,0 +1,88 @@
+        -:    0:Source:src/trigonometric_calculations.c
+        -:    0:Programs:3
+        -:    1:#include<stdio.h>
+        -:    2:#include<math.h>
+        -:    3:#include "../inc/trigonometry.h"
+        -:    4:#include "../inc/calcy.h"
+        -:    5:
+        -:    6:// float degToRad(float* angle){
+        -:    7://     *angle = (*angle) * (3.142 / 180.0);
+        -:    8://     return (*angle);
+        -:    9:// }
+        -:   10:
+       10:   11:error_t sine(float* angle, float* val){
+       10:   11-block  0
+        -:   12:    // // float angle = 360;
+        -:   13:    // float acc = 0.0001, denominator, sinx, sinval;
+        -:   14:    // angle = angle * (3.142 / 180.0);  //convert in radian
+        -:   15:    // float temp = angle;
+        -:   16:    // sinx = angle;
+        -:   17:    // sinval = sin(angle);
+        -:   18:    // int i = 1;
+        -:   19:    // do {
+        -:   20:    //     denominator = 2 * i * (2 * i + 1);
+        -:   21:    //     temp = -temp * angle * angle / denominator;
+        -:   22:    //     sinx = sinx + temp;
+        -:   23:    //     i = i + 1;
+        -:   24:    // } while (acc <= fabs(sinval - sinx));
+        -:   25:    // printf("\n%.3f",sinx);
+        -:   26:
+        -:   27:    // degToRad(&(*angle));
+        -:   28:
+       10:   29:    *angle = (*angle) * (3.142 / 180.0);
+       10:   30:    *val = sinf((*angle));
+        -:   31:    // return (*val); //sinf((*angle));
+       10:   32:    return SUCCESS;
+       10:   32-block  0
+        -:   33:}
+        -:   34:
+       10:   35:error_t cosine(float* angle, float* val){
+       10:   35-block  0
+       10:   36:    *angle = (*angle) * (3.142 / 180.0);
+       10:   37:    *val = cos((*angle));
+        -:   38:    // return (*val); //cosf((*angle));
+       10:   39:    return SUCCESS;
+       10:   39-block  0
+        -:   40:}
+        -:   41:
+       10:   42:error_t tangent(float* angle, float* val){
+       10:   42-block  0
+       10:   43:    if((*angle)==90){
+       10:   43-block  0
+        1:   44:        *val = INFINITY;
+        1:   45:        return SUCCESS;
+        1:   45-block  0
+        -:   46:    }
+        9:   47:    *angle = (*angle) * (3.142 / 180.0);
+        9:   48:    *val = tanf((*angle));
+        -:   49:    // return (*val); //tanf((*angle));
+        9:   50:    return SUCCESS;
+        9:   50-block  0
+        -:   51:}
+        -:   52:
+       10:   53:error_t cosecant(float* angle, float* val){
+       10:   53-block  0
+       10:   54:    *angle = (*angle) * (3.142 / 180.0);
+       10:   55:    *val = (1/sinf((*angle)));
+        -:   56:    // return (*val); //(1/sinf((*angle)));
+       10:   57:    return SUCCESS;
+       10:   57-block  0
+        -:   58:}
+        -:   59:
+       10:   60:error_t secant(float* angle, float* val){
+       10:   60-block  0
+       10:   61:    *angle = (*angle) * (3.142 / 180.0);
+       10:   62:    *val = (1/cosf((*angle)));
+        -:   63:    // return (*val); //(1/cosf((*angle)));
+       10:   64:    return SUCCESS;
+       10:   64-block  0
+        -:   65:}
+        -:   66:
+       10:   67:error_t cotangent(float* angle, float* val){
+       10:   67-block  0
+       10:   68:    *angle = (*angle) * (3.142 / 180.0);
+       10:   69:    *val = (1/tanf((*angle)));
+        -:   70:    // return (*val); //(1/tanf((*angle)));
+       10:   71:    return SUCCESS;
+       10:   71-block  0
+        -:   72:}
