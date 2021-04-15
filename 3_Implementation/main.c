@@ -338,6 +338,9 @@ int main(){
                         printf("\n");
                     }
                     
+                    free(mat1);
+                    free(mat2);
+                    free(res_mat);
                     break;
 
                 case 2:
@@ -383,7 +386,9 @@ int main(){
                         matrixPrintDouble(res_matd, r3, c3);
                         printf("\n");
                     }
-                    
+                    free(matd1);
+                    free(matd2);
+                    free(res_matd);
                     break;
             
                 default:
@@ -439,7 +444,9 @@ int main(){
                         matrixPrintInteger(res_mat, r3, c3);
                         printf("\n");
                     }
-                    
+                    free(mat1);
+                    free(mat2);
+                    free(res_mat);
                     break;
 
                 case 2:
@@ -485,7 +492,9 @@ int main(){
                         matrixPrintDouble(res_matd, r3, c3);
                         printf("\n");
                     }
-                    
+                    free(matd1);
+                    free(matd2);
+                    free(res_matd);
                     break;
             
                 default:
@@ -541,7 +550,9 @@ int main(){
                         matrixPrintInteger(res_mat, r3, c3);
                         printf("\n");
                     }
-                    
+                    free(mat1);
+                    free(mat2);
+                    free(res_mat);
                     break;
 
                 case 2:
@@ -587,7 +598,9 @@ int main(){
                         matrixPrintDouble(res_matd, r3, c3);
                         printf("\n");
                     }
-                    
+                    free(matd1);
+                    free(matd2);
+                    free(res_matd);
                     break;
             
                 default:
@@ -634,7 +647,8 @@ int main(){
                         matrixPrintInteger(res_mat, r3, c3);
                         printf("\n");
                     }
-
+                    free(mat1);
+                    free(res_mat);
                     break;
 
                 case 2:
@@ -671,7 +685,8 @@ int main(){
                         matrixPrintDouble(res_matd, r3, c3);
                         printf("\n");
                     }
-
+                    free(matd1);
+                    free(res_matd);
                     break;
             
                 default:

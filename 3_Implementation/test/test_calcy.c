@@ -754,7 +754,9 @@ void matAdd(void){
     TEST_ASSERT_EQUAL(9, res_mat[0][1]);
     TEST_ASSERT_EQUAL(2, res_mat[1][0]);
     TEST_ASSERT_EQUAL(10, res_mat[1][1]);
-
+    free(mat1);
+    free(mat2);
+    free(res_mat);
 
     r1 = 3;
     c1 = 3;
@@ -811,7 +813,9 @@ void matAdd(void){
     TEST_ASSERT_EQUAL(5, res_mat[2][0]);
     TEST_ASSERT_EQUAL(0, res_mat[2][1]);
     TEST_ASSERT_EQUAL(-2, res_mat[2][2]);
-
+    free(mat1);
+    free(mat2);
+    free(res_mat);
 
     r1 = 3;
     c1 = 3;
@@ -865,7 +869,9 @@ void matAdd(void){
     TEST_ASSERT_EQUAL((long int)INFINITY, res_mat[2][0]);
     TEST_ASSERT_EQUAL((long int)INFINITY, res_mat[2][1]);
     TEST_ASSERT_EQUAL((long int)INFINITY, res_mat[2][2]);
-
+    free(mat1);
+    free(mat2);
+    free(res_mat);
 }
 
 
@@ -918,7 +924,9 @@ void matAddDouble(void){
     TEST_ASSERT_EQUAL(55.2, res_mat[0][1]);
     TEST_ASSERT_EQUAL(-10.71, res_mat[1][0]);
     TEST_ASSERT_EQUAL(10.123, res_mat[1][1]);
-
+    free(mat1);
+    free(mat2);
+    free(res_mat);
 
     r1 = 3;
     c1 = 3;
@@ -975,7 +983,9 @@ void matAddDouble(void){
     TEST_ASSERT_EQUAL(3038.256, res_mat[2][0]);
     TEST_ASSERT_EQUAL(127.512, res_mat[2][1]);
     TEST_ASSERT_EQUAL(-2024.6432, res_mat[2][2]);
-
+    free(mat1);
+    free(mat2);
+    free(res_mat);
 
     r1 = 3;
     c1 = 3;
@@ -1029,6 +1039,9 @@ void matAddDouble(void){
     TEST_ASSERT_EQUAL(-INFINITY, res_mat[2][0]);
     TEST_ASSERT_EQUAL(-INFINITY, res_mat[2][1]);
     TEST_ASSERT_EQUAL(-INFINITY, res_mat[2][2]);
+    free(mat1);
+    free(mat2);
+    free(res_mat);
 }
 
 
@@ -1081,7 +1094,9 @@ void matDiff(void){
     TEST_ASSERT_EQUAL(-2, res_mat[0][1]);
     TEST_ASSERT_EQUAL(-4, res_mat[1][0]);
     TEST_ASSERT_EQUAL(-4, res_mat[1][1]);
-
+    free(mat1);
+    free(mat2);
+    free(res_mat);
 
     r1 = 3;
     c1 = 3;
@@ -1138,7 +1153,9 @@ void matDiff(void){
     TEST_ASSERT_EQUAL(-133, res_mat[2][0]);
     TEST_ASSERT_EQUAL(2, res_mat[2][1]);
     TEST_ASSERT_EQUAL(-2, res_mat[2][2]);
-
+    free(mat1);
+    free(mat2);
+    free(res_mat);
 
     r1 = 3;
     c1 = 3;
@@ -1192,7 +1209,9 @@ void matDiff(void){
     TEST_ASSERT_EQUAL((long int)INFINITY, res_mat[2][0]);
     TEST_ASSERT_EQUAL((long int)INFINITY, res_mat[2][1]);
     TEST_ASSERT_EQUAL((long int)INFINITY, res_mat[2][2]);
-
+    free(mat1);
+    free(mat2);
+    free(res_mat);
 }
 
 
@@ -1245,7 +1264,9 @@ void matDiffDouble(void){
     TEST_ASSERT_EQUAL(47.2, res_mat[0][1]);
     TEST_ASSERT_EQUAL(-16.71, res_mat[1][0]);
     TEST_ASSERT_EQUAL(-3.877, res_mat[1][1]);
-
+    free(mat1);
+    free(mat2);
+    free(res_mat);
 
     r1 = 3;
     c1 = 3;
@@ -1302,7 +1323,9 @@ void matDiffDouble(void){
     TEST_ASSERT_EQUAL(3034.256, res_mat[2][0]);
     TEST_ASSERT_EQUAL(129.512, res_mat[2][1]);
     TEST_ASSERT_EQUAL(-2024.6432, res_mat[2][2]);
-
+    free(mat1);
+    free(mat2);
+    free(res_mat);
 
     r1 = 3;
     c1 = 3;
@@ -1356,6 +1379,9 @@ void matDiffDouble(void){
     TEST_ASSERT_EQUAL(-INFINITY, res_mat[2][0]);
     TEST_ASSERT_EQUAL(-INFINITY, res_mat[2][1]);
     TEST_ASSERT_EQUAL(-INFINITY, res_mat[2][2]);
+    free(mat1);
+    free(mat2);
+    free(res_mat);
 }
 
 
@@ -1408,7 +1434,9 @@ void matMul(void){
     TEST_ASSERT_EQUAL(4, res_mat[0][1]);
     TEST_ASSERT_EQUAL(10, res_mat[1][0]);
     TEST_ASSERT_EQUAL(8, res_mat[1][1]);
-
+    free(mat1);
+    free(mat2);
+    free(res_mat);
 
     r1 = 2;
     c1 = 3;
@@ -1454,7 +1482,9 @@ void matMul(void){
     TEST_ASSERT_EQUAL(64, res_mat[0][1]);
     TEST_ASSERT_EQUAL(139, res_mat[1][0]);
     TEST_ASSERT_EQUAL(154, res_mat[1][1]);
-
+    free(mat1);
+    free(mat2);
+    free(res_mat);
 
     r1 = 3;
     c1 = 2;
@@ -1501,6 +1531,9 @@ void matMul(void){
     TEST_ASSERT_EQUAL((long int)INFINITY, res_mat[1][1]);
     TEST_ASSERT_EQUAL((long int)INFINITY, res_mat[2][0]);
     TEST_ASSERT_EQUAL((long int)INFINITY, res_mat[2][1]);
+    free(mat1);
+    free(mat2);
+    free(res_mat);
 }
 
 
@@ -1553,7 +1586,9 @@ void matMulDouble(void){
     TEST_ASSERT_EQUAL(524.288, res_mat[0][1]);
     TEST_ASSERT_EQUAL(23.4032, res_mat[1][0]);
     TEST_ASSERT_EQUAL(1024, res_mat[1][1]);
-
+    free(mat1);
+    free(mat2);
+    free(res_mat);
 
     r1 = 2;
     c1 = 3;
@@ -1599,7 +1634,9 @@ void matMulDouble(void){
     TEST_ASSERT_EQUAL(20524.624, res_mat[0][1]);
     TEST_ASSERT_EQUAL(2835328.236, res_mat[1][0]);
     TEST_ASSERT_EQUAL(3240322.104, res_mat[1][1]);
-
+    free(mat1);
+    free(mat2);
+    free(res_mat);
 
     r1 = 3;
     c1 = 2;
@@ -1647,6 +1684,9 @@ void matMulDouble(void){
     TEST_ASSERT_EQUAL(-INFINITY, res_mat[1][1]);
     TEST_ASSERT_EQUAL(-INFINITY, res_mat[2][0]);
     TEST_ASSERT_EQUAL(-INFINITY, res_mat[2][1]);
+    free(mat1);
+    free(mat2);
+    free(res_mat);
 }
 
 
@@ -1687,7 +1727,8 @@ void matTrans(void){
     TEST_ASSERT_EQUAL(3, res_mat[0][1]);
     TEST_ASSERT_EQUAL(2, res_mat[1][0]);
     TEST_ASSERT_EQUAL(4, res_mat[1][1]);
-
+    free(mat1);
+    free(res_mat);
 
     r1 = 2;
     c1 = 3;
@@ -1721,6 +1762,8 @@ void matTrans(void){
     TEST_ASSERT_EQUAL(5, res_mat[1][1]);
     TEST_ASSERT_EQUAL(3, res_mat[2][0]);
     TEST_ASSERT_EQUAL(6, res_mat[2][1]);
+    free(mat1);
+    free(res_mat);
 }
 
 
@@ -1761,7 +1804,8 @@ void matTransDouble(void){
     TEST_ASSERT_EQUAL(-308.923, res_mat[0][1]);
     TEST_ASSERT_EQUAL(2.31, res_mat[1][0]);
     TEST_ASSERT_EQUAL(4.98, res_mat[1][1]);
-
+    free(mat1);
+    free(res_mat);
 
     r1 = 2;
     c1 = 3;
@@ -1795,6 +1839,8 @@ void matTransDouble(void){
     TEST_ASSERT_EQUAL(-58988.28172, res_mat[1][1]);
     TEST_ASSERT_EQUAL(39829.2601, res_mat[2][0]);
     TEST_ASSERT_EQUAL(6, res_mat[2][1]);
+    free(mat1);
+    free(res_mat);
 }
 
 
