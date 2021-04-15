@@ -1,4 +1,4 @@
-name: Code Quality - Cppcheck
+name: CodeQuality - Cppcheck
 
 on:
   push:
