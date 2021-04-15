@@ -1,0 +1,345 @@
+\hypertarget{matrix__calculations_8c}{}\doxysection{C\+:/\+Users/\+Hrushikar Teja K/\+Desktop/stepin-\/miniproject/3\+\_\+\+Implementation/src/matrix\+\_\+calculations.c File Reference}
+\label{matrix__calculations_8c}\index{C:/Users/Hrushikar Teja K/Desktop/stepin-\/miniproject/3\_Implementation/src/matrix\_calculations.c@{C:/Users/Hrushikar Teja K/Desktop/stepin-\/miniproject/3\_Implementation/src/matrix\_calculations.c}}
+
+
+Source file to perform matrix calculations.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$float.\+h$>$}\newline
+{\ttfamily \#include $<$limits.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}matrix.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}calcy.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{calcy_8h_ac7659d73a8cdedc08e9f566bb406689c}{error\+\_\+t}} \mbox{\hyperlink{matrix__calculations_8c_a6a1f95dc498d785235c6cb3177934b11}{matrix\+Sum}} (long int $\ast$$\ast$mat1, long int $\ast$$\ast$mat2, long int $\ast$$\ast$res\+\_\+mat, int r1, int c1, int r2, int c2, int r3, int c3)
+\begin{DoxyCompactList}\small\item\em Function to add two matrices of integer values. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{calcy_8h_ac7659d73a8cdedc08e9f566bb406689c}{error\+\_\+t}} \mbox{\hyperlink{matrix__calculations_8c_aff8dd57b4e84b9654601567040677fcd}{matrix\+Sum\+Double}} (double $\ast$$\ast$matd1, double $\ast$$\ast$matd2, double $\ast$$\ast$res\+\_\+matd, int r1, int c1, int r2, int c2, int r3, int c3)
+\begin{DoxyCompactList}\small\item\em Function to add two matrices of real values. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{calcy_8h_ac7659d73a8cdedc08e9f566bb406689c}{error\+\_\+t}} \mbox{\hyperlink{matrix__calculations_8c_a18a2d5551d034018c38c80eacf8ba928}{matrix\+Difference}} (long int $\ast$$\ast$mat1, long int $\ast$$\ast$mat2, long int $\ast$$\ast$res\+\_\+mat, int r1, int c1, int r2, int c2, int r3, int c3)
+\begin{DoxyCompactList}\small\item\em Function to subtract two matrices of integer values. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{calcy_8h_ac7659d73a8cdedc08e9f566bb406689c}{error\+\_\+t}} \mbox{\hyperlink{matrix__calculations_8c_aa6333c60bfd525b0e49c56fa273bb1aa}{matrix\+Difference\+Double}} (double $\ast$$\ast$matd1, double $\ast$$\ast$matd2, double $\ast$$\ast$res\+\_\+matd, int r1, int c1, int r2, int c2, int r3, int c3)
+\begin{DoxyCompactList}\small\item\em Function to subtract two matrices of real values. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{calcy_8h_ac7659d73a8cdedc08e9f566bb406689c}{error\+\_\+t}} \mbox{\hyperlink{matrix__calculations_8c_a6378a65f392b5826b61ebd7c1359c0e4}{matrix\+Product}} (long int $\ast$$\ast$mat1, long int $\ast$$\ast$mat2, long int $\ast$$\ast$res\+\_\+mat, int r1, int c1, int r2, int c2, int r3, int c3)
+\begin{DoxyCompactList}\small\item\em Function to multiply two matrices of integer values. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{calcy_8h_ac7659d73a8cdedc08e9f566bb406689c}{error\+\_\+t}} \mbox{\hyperlink{matrix__calculations_8c_a2098835270d8528302f61a25d6ac14a6}{matrix\+Product\+Double}} (double $\ast$$\ast$matd1, double $\ast$$\ast$matd2, double $\ast$$\ast$res\+\_\+matd, int r1, int c1, int r2, int c2, int r3, int c3)
+\begin{DoxyCompactList}\small\item\em Function to multiply two matrices of real values. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{calcy_8h_ac7659d73a8cdedc08e9f566bb406689c}{error\+\_\+t}} \mbox{\hyperlink{matrix__calculations_8c_acb0ba026c4d7bb1f936ca76ba23966dc}{matrix\+Transpose}} (long int $\ast$$\ast$mat1, long int $\ast$$\ast$res\+\_\+mat, int r1, int c1, int r3, int c3)
+\begin{DoxyCompactList}\small\item\em Function to transpose a matrix of integer values. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{calcy_8h_ac7659d73a8cdedc08e9f566bb406689c}{error\+\_\+t}} \mbox{\hyperlink{matrix__calculations_8c_acf58e5cd2ef1c1fa8c52170944fbeabd}{matrix\+Transpose\+Double}} (double $\ast$$\ast$matd1, double $\ast$$\ast$res\+\_\+matd, int r1, int c1, int r3, int c3)
+\begin{DoxyCompactList}\small\item\em Function to transpose a matrix of real values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Source file to perform matrix calculations. 
+
+\begin{DoxyAuthor}{Author}
+Hrushikar Teja K (\href{mailto:hrushikarteja.k@gmail.com}{\texttt{ hrushikarteja.\+k@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2021-\/04-\/15
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2021 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{matrix__calculations_8c_a18a2d5551d034018c38c80eacf8ba928}\label{matrix__calculations_8c_a18a2d5551d034018c38c80eacf8ba928}} 
+\index{matrix\_calculations.c@{matrix\_calculations.c}!matrixDifference@{matrixDifference}}
+\index{matrixDifference@{matrixDifference}!matrix\_calculations.c@{matrix\_calculations.c}}
+\doxysubsubsection{\texorpdfstring{matrixDifference()}{matrixDifference()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{calcy_8h_ac7659d73a8cdedc08e9f566bb406689c}{error\+\_\+t}} matrix\+Difference (\begin{DoxyParamCaption}\item[{long int $\ast$$\ast$}]{mat1,  }\item[{long int $\ast$$\ast$}]{mat2,  }\item[{long int $\ast$$\ast$}]{res\+\_\+mat,  }\item[{int}]{r1,  }\item[{int}]{c1,  }\item[{int}]{r2,  }\item[{int}]{c2,  }\item[{int}]{r3,  }\item[{int}]{c3 }\end{DoxyParamCaption})}
+
+
+
+Function to subtract two matrices of integer values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mat1} & \\
+\hline
+{\em mat2} & \\
+\hline
+{\em res\+\_\+mat} & \\
+\hline
+{\em r1} & \\
+\hline
+{\em c1} & \\
+\hline
+{\em r2} & \\
+\hline
+{\em c2} & \\
+\hline
+{\em r3} & \\
+\hline
+{\em c3} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error\+\_\+t 
+\end{DoxyReturn}
+
+
+Definition at line 100 of file matrix\+\_\+calculations.\+c.
+
+\mbox{\Hypertarget{matrix__calculations_8c_aa6333c60bfd525b0e49c56fa273bb1aa}\label{matrix__calculations_8c_aa6333c60bfd525b0e49c56fa273bb1aa}} 
+\index{matrix\_calculations.c@{matrix\_calculations.c}!matrixDifferenceDouble@{matrixDifferenceDouble}}
+\index{matrixDifferenceDouble@{matrixDifferenceDouble}!matrix\_calculations.c@{matrix\_calculations.c}}
+\doxysubsubsection{\texorpdfstring{matrixDifferenceDouble()}{matrixDifferenceDouble()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{calcy_8h_ac7659d73a8cdedc08e9f566bb406689c}{error\+\_\+t}} matrix\+Difference\+Double (\begin{DoxyParamCaption}\item[{double $\ast$$\ast$}]{matd1,  }\item[{double $\ast$$\ast$}]{matd2,  }\item[{double $\ast$$\ast$}]{res\+\_\+matd,  }\item[{int}]{r1,  }\item[{int}]{c1,  }\item[{int}]{r2,  }\item[{int}]{c2,  }\item[{int}]{r3,  }\item[{int}]{c3 }\end{DoxyParamCaption})}
+
+
+
+Function to subtract two matrices of real values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matd1} & \\
+\hline
+{\em matd2} & \\
+\hline
+{\em res\+\_\+matd} & \\
+\hline
+{\em r1} & \\
+\hline
+{\em c1} & \\
+\hline
+{\em r2} & \\
+\hline
+{\em c2} & \\
+\hline
+{\em r3} & \\
+\hline
+{\em c3} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error\+\_\+t 
+\end{DoxyReturn}
+
+
+Definition at line 133 of file matrix\+\_\+calculations.\+c.
+
+\mbox{\Hypertarget{matrix__calculations_8c_a6378a65f392b5826b61ebd7c1359c0e4}\label{matrix__calculations_8c_a6378a65f392b5826b61ebd7c1359c0e4}} 
+\index{matrix\_calculations.c@{matrix\_calculations.c}!matrixProduct@{matrixProduct}}
+\index{matrixProduct@{matrixProduct}!matrix\_calculations.c@{matrix\_calculations.c}}
+\doxysubsubsection{\texorpdfstring{matrixProduct()}{matrixProduct()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{calcy_8h_ac7659d73a8cdedc08e9f566bb406689c}{error\+\_\+t}} matrix\+Product (\begin{DoxyParamCaption}\item[{long int $\ast$$\ast$}]{mat1,  }\item[{long int $\ast$$\ast$}]{mat2,  }\item[{long int $\ast$$\ast$}]{res\+\_\+mat,  }\item[{int}]{r1,  }\item[{int}]{c1,  }\item[{int}]{r2,  }\item[{int}]{c2,  }\item[{int}]{r3,  }\item[{int}]{c3 }\end{DoxyParamCaption})}
+
+
+
+Function to multiply two matrices of integer values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mat1} & \\
+\hline
+{\em mat2} & \\
+\hline
+{\em res\+\_\+mat} & \\
+\hline
+{\em r1} & \\
+\hline
+{\em c1} & \\
+\hline
+{\em r2} & \\
+\hline
+{\em c2} & \\
+\hline
+{\em r3} & \\
+\hline
+{\em c3} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error\+\_\+t 
+\end{DoxyReturn}
+
+
+Definition at line 166 of file matrix\+\_\+calculations.\+c.
+
+\mbox{\Hypertarget{matrix__calculations_8c_a2098835270d8528302f61a25d6ac14a6}\label{matrix__calculations_8c_a2098835270d8528302f61a25d6ac14a6}} 
+\index{matrix\_calculations.c@{matrix\_calculations.c}!matrixProductDouble@{matrixProductDouble}}
+\index{matrixProductDouble@{matrixProductDouble}!matrix\_calculations.c@{matrix\_calculations.c}}
+\doxysubsubsection{\texorpdfstring{matrixProductDouble()}{matrixProductDouble()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{calcy_8h_ac7659d73a8cdedc08e9f566bb406689c}{error\+\_\+t}} matrix\+Product\+Double (\begin{DoxyParamCaption}\item[{double $\ast$$\ast$}]{matd1,  }\item[{double $\ast$$\ast$}]{matd2,  }\item[{double $\ast$$\ast$}]{res\+\_\+matd,  }\item[{int}]{r1,  }\item[{int}]{c1,  }\item[{int}]{r2,  }\item[{int}]{c2,  }\item[{int}]{r3,  }\item[{int}]{c3 }\end{DoxyParamCaption})}
+
+
+
+Function to multiply two matrices of real values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matd1} & \\
+\hline
+{\em matd2} & \\
+\hline
+{\em res\+\_\+matd} & \\
+\hline
+{\em r1} & \\
+\hline
+{\em c1} & \\
+\hline
+{\em r2} & \\
+\hline
+{\em c2} & \\
+\hline
+{\em r3} & \\
+\hline
+{\em c3} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error\+\_\+t 
+\end{DoxyReturn}
+
+
+Definition at line 202 of file matrix\+\_\+calculations.\+c.
+
+\mbox{\Hypertarget{matrix__calculations_8c_a6a1f95dc498d785235c6cb3177934b11}\label{matrix__calculations_8c_a6a1f95dc498d785235c6cb3177934b11}} 
+\index{matrix\_calculations.c@{matrix\_calculations.c}!matrixSum@{matrixSum}}
+\index{matrixSum@{matrixSum}!matrix\_calculations.c@{matrix\_calculations.c}}
+\doxysubsubsection{\texorpdfstring{matrixSum()}{matrixSum()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{calcy_8h_ac7659d73a8cdedc08e9f566bb406689c}{error\+\_\+t}} matrix\+Sum (\begin{DoxyParamCaption}\item[{long int $\ast$$\ast$}]{mat1,  }\item[{long int $\ast$$\ast$}]{mat2,  }\item[{long int $\ast$$\ast$}]{res\+\_\+mat,  }\item[{int}]{r1,  }\item[{int}]{c1,  }\item[{int}]{r2,  }\item[{int}]{c2,  }\item[{int}]{r3,  }\item[{int}]{c3 }\end{DoxyParamCaption})}
+
+
+
+Function to add two matrices of integer values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mat1} & \\
+\hline
+{\em mat2} & \\
+\hline
+{\em res\+\_\+mat} & \\
+\hline
+{\em r1} & \\
+\hline
+{\em c1} & \\
+\hline
+{\em r2} & \\
+\hline
+{\em c2} & \\
+\hline
+{\em r3} & \\
+\hline
+{\em c3} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error\+\_\+t 
+\end{DoxyReturn}
+
+
+Definition at line 35 of file matrix\+\_\+calculations.\+c.
+
+\mbox{\Hypertarget{matrix__calculations_8c_aff8dd57b4e84b9654601567040677fcd}\label{matrix__calculations_8c_aff8dd57b4e84b9654601567040677fcd}} 
+\index{matrix\_calculations.c@{matrix\_calculations.c}!matrixSumDouble@{matrixSumDouble}}
+\index{matrixSumDouble@{matrixSumDouble}!matrix\_calculations.c@{matrix\_calculations.c}}
+\doxysubsubsection{\texorpdfstring{matrixSumDouble()}{matrixSumDouble()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{calcy_8h_ac7659d73a8cdedc08e9f566bb406689c}{error\+\_\+t}} matrix\+Sum\+Double (\begin{DoxyParamCaption}\item[{double $\ast$$\ast$}]{matd1,  }\item[{double $\ast$$\ast$}]{matd2,  }\item[{double $\ast$$\ast$}]{res\+\_\+matd,  }\item[{int}]{r1,  }\item[{int}]{c1,  }\item[{int}]{r2,  }\item[{int}]{c2,  }\item[{int}]{r3,  }\item[{int}]{c3 }\end{DoxyParamCaption})}
+
+
+
+Function to add two matrices of real values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matd1} & \\
+\hline
+{\em matd2} & \\
+\hline
+{\em res\+\_\+matd} & \\
+\hline
+{\em r1} & \\
+\hline
+{\em c1} & \\
+\hline
+{\em r2} & \\
+\hline
+{\em c2} & \\
+\hline
+{\em r3} & \\
+\hline
+{\em c3} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error\+\_\+t 
+\end{DoxyReturn}
+
+
+Definition at line 67 of file matrix\+\_\+calculations.\+c.
+
+\mbox{\Hypertarget{matrix__calculations_8c_acb0ba026c4d7bb1f936ca76ba23966dc}\label{matrix__calculations_8c_acb0ba026c4d7bb1f936ca76ba23966dc}} 
+\index{matrix\_calculations.c@{matrix\_calculations.c}!matrixTranspose@{matrixTranspose}}
+\index{matrixTranspose@{matrixTranspose}!matrix\_calculations.c@{matrix\_calculations.c}}
+\doxysubsubsection{\texorpdfstring{matrixTranspose()}{matrixTranspose()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{calcy_8h_ac7659d73a8cdedc08e9f566bb406689c}{error\+\_\+t}} matrix\+Transpose (\begin{DoxyParamCaption}\item[{long int $\ast$$\ast$}]{mat1,  }\item[{long int $\ast$$\ast$}]{res\+\_\+mat,  }\item[{int}]{r1,  }\item[{int}]{c1,  }\item[{int}]{r3,  }\item[{int}]{c3 }\end{DoxyParamCaption})}
+
+
+
+Function to transpose a matrix of integer values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mat1} & \\
+\hline
+{\em res\+\_\+mat} & \\
+\hline
+{\em r1} & \\
+\hline
+{\em c1} & \\
+\hline
+{\em r3} & \\
+\hline
+{\em c3} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error\+\_\+t 
+\end{DoxyReturn}
+
+
+Definition at line 235 of file matrix\+\_\+calculations.\+c.
+
+\mbox{\Hypertarget{matrix__calculations_8c_acf58e5cd2ef1c1fa8c52170944fbeabd}\label{matrix__calculations_8c_acf58e5cd2ef1c1fa8c52170944fbeabd}} 
+\index{matrix\_calculations.c@{matrix\_calculations.c}!matrixTransposeDouble@{matrixTransposeDouble}}
+\index{matrixTransposeDouble@{matrixTransposeDouble}!matrix\_calculations.c@{matrix\_calculations.c}}
+\doxysubsubsection{\texorpdfstring{matrixTransposeDouble()}{matrixTransposeDouble()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{calcy_8h_ac7659d73a8cdedc08e9f566bb406689c}{error\+\_\+t}} matrix\+Transpose\+Double (\begin{DoxyParamCaption}\item[{double $\ast$$\ast$}]{matd1,  }\item[{double $\ast$$\ast$}]{res\+\_\+matd,  }\item[{int}]{r1,  }\item[{int}]{c1,  }\item[{int}]{r3,  }\item[{int}]{c3 }\end{DoxyParamCaption})}
+
+
+
+Function to transpose a matrix of real values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matd1} & \\
+\hline
+{\em res\+\_\+matd} & \\
+\hline
+{\em r1} & \\
+\hline
+{\em c1} & \\
+\hline
+{\em r3} & \\
+\hline
+{\em c3} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error\+\_\+t 
+\end{DoxyReturn}
+
+
+Definition at line 257 of file matrix\+\_\+calculations.\+c.
+

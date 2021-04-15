@@ -1,0 +1,727 @@
+\hypertarget{test__calcy_8c}{}\doxysection{C\+:/\+Users/\+Hrushikar Teja K/\+Desktop/stepin-\/miniproject/3\+\_\+\+Implementation/test/test\+\_\+calcy.c File Reference}
+\label{test__calcy_8c}\index{C:/Users/Hrushikar Teja K/Desktop/stepin-\/miniproject/3\_Implementation/test/test\_calcy.c@{C:/Users/Hrushikar Teja K/Desktop/stepin-\/miniproject/3\_Implementation/test/test\_calcy.c}}
+
+
+Source file containing unit tests.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$limits.\+h$>$}\newline
+{\ttfamily \#include $<$float.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}calc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}calcy.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}matrix.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}trigonometry.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}unity.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{test__calcy_8c_a63326a1b70b6e3f070e51687798e02de}{set\+Up}} ()
+\begin{DoxyCompactList}\small\item\em Set the Up object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{test__calcy_8c_ab804e0f66def63262c1d6b4e3d2a2bd7}{tear\+Down}} ()
+\item 
+void \mbox{\hyperlink{test__calcy_8c_a1742a9b430e049cfff067ff264af55dd}{add\+Int}} (void)
+\begin{DoxyCompactList}\small\item\em Test function to test the simple integer addition. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{test__calcy_8c_a47888a630a4861cb50fe6b6e0c167a22}{add\+Doub}} (void)
+\begin{DoxyCompactList}\small\item\em Test function to test the simple real number addition. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{test__calcy_8c_ab09a6457a19510670b369271b988cd8c}{sub}} (void)
+\begin{DoxyCompactList}\small\item\em Test function to test the simple integer subtraction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{test__calcy_8c_a8c307cd25d2c3db8213c02266a6279df}{sub\+Double}} (void)
+\begin{DoxyCompactList}\small\item\em Test function to test the simple real number subtraction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{test__calcy_8c_ae65b3178bf13b34736c2d755b331b347}{mul}} (void)
+\begin{DoxyCompactList}\small\item\em Test function to test the simple integer multiplication. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{test__calcy_8c_a9b3a19297d4361c02f7d828afe6c2940}{mul\+Double}} (void)
+\begin{DoxyCompactList}\small\item\em Test function to test the simple real number multiplication. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{test__calcy_8c_a28a165d06c5866cca96adae9b8a42df0}{dividede}} (void)
+\begin{DoxyCompactList}\small\item\em Test function to test the simple division. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{test__calcy_8c_a1336e4b2c69a91e9bb40cdd11f32eab9}{solve\+Quad}} (void)
+\begin{DoxyCompactList}\small\item\em Test function to test the quadratic euqation solving function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{test__calcy_8c_aecd3532daf95fcc9cb2d31af7c7b3ceb}{mat\+Add}} (void)
+\begin{DoxyCompactList}\small\item\em Test function to test the matrix addition of integers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{test__calcy_8c_a7e3abe9d861f7597f1280d3ac13cdc8c}{mat\+Add\+Double}} (void)
+\begin{DoxyCompactList}\small\item\em Test function to test the matrix addition of real numbers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{test__calcy_8c_ab999164db9533ef53e1c66c93b7bf155}{mat\+Diff}} (void)
+\begin{DoxyCompactList}\small\item\em Test function to test the matrix subtraction of integers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{test__calcy_8c_a50babed30f9c467628a61b3bf351072f}{mat\+Diff\+Double}} (void)
+\begin{DoxyCompactList}\small\item\em Test function to test the matrix subtraction of real numbers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{test__calcy_8c_acd3b5185da32865607580ac17f7f65a4}{mat\+Mul}} (void)
+\begin{DoxyCompactList}\small\item\em Test function to test the matrix multiplication of integers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{test__calcy_8c_a9846df30846d72f2e7d039ea675be2ba}{mat\+Mul\+Double}} (void)
+\begin{DoxyCompactList}\small\item\em Test function to test the matrix multiplication of real numbers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{test__calcy_8c_a28c1076dd5c5264f8b3883a5e8ed7d95}{mat\+Trans}} (void)
+\begin{DoxyCompactList}\small\item\em Test function to test the integer matrix transposition. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{test__calcy_8c_aa5497224b1a36bd3087aa310624fa3a3}{mat\+Trans\+Double}} (void)
+\begin{DoxyCompactList}\small\item\em Test function to test the real value matrix transposition. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{test__calcy_8c_acaf25ff6e925a673987d945d60f93a75}{trig\+Sin}} (void)
+\begin{DoxyCompactList}\small\item\em Test function to test the sine function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{test__calcy_8c_a42634af4529ce93092e5af6b36b00c96}{trig\+Cos}} (void)
+\begin{DoxyCompactList}\small\item\em Test function to test the sine function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{test__calcy_8c_ad26f524d5e7c857bad217f52c690730d}{trig\+Tan}} (void)
+\begin{DoxyCompactList}\small\item\em Test function to test the sine function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{test__calcy_8c_a75502839febfdb008d8ed112cc58ed74}{trig\+Cosec}} (void)
+\begin{DoxyCompactList}\small\item\em Test function to test the sine function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{test__calcy_8c_a3b303a3b7dcad57b7dc36bb5acbd3817}{trig\+Sec}} (void)
+\begin{DoxyCompactList}\small\item\em Test function to test the sine function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{test__calcy_8c_aec33c559f9e9715d670c636906379c98}{trig\+Cot}} (void)
+\begin{DoxyCompactList}\small\item\em Test function to test the sine function. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{test__calcy_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}} (void)
+\begin{DoxyCompactList}\small\item\em Test main function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Source file containing unit tests. 
+
+\begin{DoxyAuthor}{Author}
+Hrushikar Teja K (\href{mailto:hrushikarteja.k@gmail.com}{\texttt{ hrushikarteja.\+k@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2021-\/04-\/15
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2021 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{test__calcy_8c_a47888a630a4861cb50fe6b6e0c167a22}\label{test__calcy_8c_a47888a630a4861cb50fe6b6e0c167a22}} 
+\index{test\_calcy.c@{test\_calcy.c}!addDoub@{addDoub}}
+\index{addDoub@{addDoub}!test\_calcy.c@{test\_calcy.c}}
+\doxysubsubsection{\texorpdfstring{addDoub()}{addDoub()}}
+{\footnotesize\ttfamily void add\+Doub (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Test function to test the simple real number addition. 
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Definition at line 108 of file test\+\_\+calcy.\+c.
+
+\mbox{\Hypertarget{test__calcy_8c_a1742a9b430e049cfff067ff264af55dd}\label{test__calcy_8c_a1742a9b430e049cfff067ff264af55dd}} 
+\index{test\_calcy.c@{test\_calcy.c}!addInt@{addInt}}
+\index{addInt@{addInt}!test\_calcy.c@{test\_calcy.c}}
+\doxysubsubsection{\texorpdfstring{addInt()}{addInt()}}
+{\footnotesize\ttfamily void add\+Int (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Test function to test the simple integer addition. 
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Definition at line 39 of file test\+\_\+calcy.\+c.
+
+\mbox{\Hypertarget{test__calcy_8c_a28a165d06c5866cca96adae9b8a42df0}\label{test__calcy_8c_a28a165d06c5866cca96adae9b8a42df0}} 
+\index{test\_calcy.c@{test\_calcy.c}!dividede@{dividede}}
+\index{dividede@{dividede}!test\_calcy.c@{test\_calcy.c}}
+\doxysubsubsection{\texorpdfstring{dividede()}{dividede()}}
+{\footnotesize\ttfamily void dividede (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Test function to test the simple division. 
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Definition at line 532 of file test\+\_\+calcy.\+c.
+
+\mbox{\Hypertarget{test__calcy_8c_a840291bc02cba5474a4cb46a9b9566fe}\label{test__calcy_8c_a840291bc02cba5474a4cb46a9b9566fe}} 
+\index{test\_calcy.c@{test\_calcy.c}!main@{main}}
+\index{main@{main}!test\_calcy.c@{test\_calcy.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Test main function. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+Construct a new run test object
+
+Construct a new run test object
+
+Construct a new run test object
+
+Construct a new run test object
+
+Construct a new run test object
+
+Construct a new run test object
+
+Construct a new run test object
+
+Construct a new run test object
+
+Construct a new run test object
+
+Construct a new run test object
+
+Construct a new run test object
+
+Construct a new run test object
+
+Construct a new run test object
+
+Construct a new run test object
+
+Construct a new run test object
+
+Construct a new run test object
+
+Construct a new run test object
+
+Construct a new run test object
+
+Construct a new run test object
+
+Construct a new run test object
+
+Construct a new run test object
+
+Construct a new run test object
+
+Definition at line 2392 of file test\+\_\+calcy.\+c.
+
+\mbox{\Hypertarget{test__calcy_8c_aecd3532daf95fcc9cb2d31af7c7b3ceb}\label{test__calcy_8c_aecd3532daf95fcc9cb2d31af7c7b3ceb}} 
+\index{test\_calcy.c@{test\_calcy.c}!matAdd@{matAdd}}
+\index{matAdd@{matAdd}!test\_calcy.c@{test\_calcy.c}}
+\doxysubsubsection{\texorpdfstring{matAdd()}{matAdd()}}
+{\footnotesize\ttfamily void mat\+Add (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Test function to test the matrix addition of integers. 
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Definition at line 713 of file test\+\_\+calcy.\+c.
+
+\mbox{\Hypertarget{test__calcy_8c_a7e3abe9d861f7597f1280d3ac13cdc8c}\label{test__calcy_8c_a7e3abe9d861f7597f1280d3ac13cdc8c}} 
+\index{test\_calcy.c@{test\_calcy.c}!matAddDouble@{matAddDouble}}
+\index{matAddDouble@{matAddDouble}!test\_calcy.c@{test\_calcy.c}}
+\doxysubsubsection{\texorpdfstring{matAddDouble()}{matAddDouble()}}
+{\footnotesize\ttfamily void mat\+Add\+Double (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Test function to test the matrix addition of real numbers. 
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Definition at line 882 of file test\+\_\+calcy.\+c.
+
+\mbox{\Hypertarget{test__calcy_8c_ab999164db9533ef53e1c66c93b7bf155}\label{test__calcy_8c_ab999164db9533ef53e1c66c93b7bf155}} 
+\index{test\_calcy.c@{test\_calcy.c}!matDiff@{matDiff}}
+\index{matDiff@{matDiff}!test\_calcy.c@{test\_calcy.c}}
+\doxysubsubsection{\texorpdfstring{matDiff()}{matDiff()}}
+{\footnotesize\ttfamily void mat\+Diff (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Test function to test the matrix subtraction of integers. 
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Definition at line 1052 of file test\+\_\+calcy.\+c.
+
+\mbox{\Hypertarget{test__calcy_8c_a50babed30f9c467628a61b3bf351072f}\label{test__calcy_8c_a50babed30f9c467628a61b3bf351072f}} 
+\index{test\_calcy.c@{test\_calcy.c}!matDiffDouble@{matDiffDouble}}
+\index{matDiffDouble@{matDiffDouble}!test\_calcy.c@{test\_calcy.c}}
+\doxysubsubsection{\texorpdfstring{matDiffDouble()}{matDiffDouble()}}
+{\footnotesize\ttfamily void mat\+Diff\+Double (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Test function to test the matrix subtraction of real numbers. 
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Definition at line 1222 of file test\+\_\+calcy.\+c.
+
+\mbox{\Hypertarget{test__calcy_8c_acd3b5185da32865607580ac17f7f65a4}\label{test__calcy_8c_acd3b5185da32865607580ac17f7f65a4}} 
+\index{test\_calcy.c@{test\_calcy.c}!matMul@{matMul}}
+\index{matMul@{matMul}!test\_calcy.c@{test\_calcy.c}}
+\doxysubsubsection{\texorpdfstring{matMul()}{matMul()}}
+{\footnotesize\ttfamily void mat\+Mul (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Test function to test the matrix multiplication of integers. 
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Definition at line 1392 of file test\+\_\+calcy.\+c.
+
+\mbox{\Hypertarget{test__calcy_8c_a9846df30846d72f2e7d039ea675be2ba}\label{test__calcy_8c_a9846df30846d72f2e7d039ea675be2ba}} 
+\index{test\_calcy.c@{test\_calcy.c}!matMulDouble@{matMulDouble}}
+\index{matMulDouble@{matMulDouble}!test\_calcy.c@{test\_calcy.c}}
+\doxysubsubsection{\texorpdfstring{matMulDouble()}{matMulDouble()}}
+{\footnotesize\ttfamily void mat\+Mul\+Double (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Test function to test the matrix multiplication of real numbers. 
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Definition at line 1544 of file test\+\_\+calcy.\+c.
+
+\mbox{\Hypertarget{test__calcy_8c_a28c1076dd5c5264f8b3883a5e8ed7d95}\label{test__calcy_8c_a28c1076dd5c5264f8b3883a5e8ed7d95}} 
+\index{test\_calcy.c@{test\_calcy.c}!matTrans@{matTrans}}
+\index{matTrans@{matTrans}!test\_calcy.c@{test\_calcy.c}}
+\doxysubsubsection{\texorpdfstring{matTrans()}{matTrans()}}
+{\footnotesize\ttfamily void mat\+Trans (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Test function to test the integer matrix transposition. 
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Definition at line 1697 of file test\+\_\+calcy.\+c.
+
+\mbox{\Hypertarget{test__calcy_8c_aa5497224b1a36bd3087aa310624fa3a3}\label{test__calcy_8c_aa5497224b1a36bd3087aa310624fa3a3}} 
+\index{test\_calcy.c@{test\_calcy.c}!matTransDouble@{matTransDouble}}
+\index{matTransDouble@{matTransDouble}!test\_calcy.c@{test\_calcy.c}}
+\doxysubsubsection{\texorpdfstring{matTransDouble()}{matTransDouble()}}
+{\footnotesize\ttfamily void mat\+Trans\+Double (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Test function to test the real value matrix transposition. 
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Definition at line 1774 of file test\+\_\+calcy.\+c.
+
+\mbox{\Hypertarget{test__calcy_8c_ae65b3178bf13b34736c2d755b331b347}\label{test__calcy_8c_ae65b3178bf13b34736c2d755b331b347}} 
+\index{test\_calcy.c@{test\_calcy.c}!mul@{mul}}
+\index{mul@{mul}!test\_calcy.c@{test\_calcy.c}}
+\doxysubsubsection{\texorpdfstring{mul()}{mul()}}
+{\footnotesize\ttfamily void mul (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Test function to test the simple integer multiplication. 
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Definition at line 352 of file test\+\_\+calcy.\+c.
+
+\mbox{\Hypertarget{test__calcy_8c_a9b3a19297d4361c02f7d828afe6c2940}\label{test__calcy_8c_a9b3a19297d4361c02f7d828afe6c2940}} 
+\index{test\_calcy.c@{test\_calcy.c}!mulDouble@{mulDouble}}
+\index{mulDouble@{mulDouble}!test\_calcy.c@{test\_calcy.c}}
+\doxysubsubsection{\texorpdfstring{mulDouble()}{mulDouble()}}
+{\footnotesize\ttfamily void mul\+Double (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Test function to test the simple real number multiplication. 
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Definition at line 451 of file test\+\_\+calcy.\+c.
+
+\mbox{\Hypertarget{test__calcy_8c_a63326a1b70b6e3f070e51687798e02de}\label{test__calcy_8c_a63326a1b70b6e3f070e51687798e02de}} 
+\index{test\_calcy.c@{test\_calcy.c}!setUp@{setUp}}
+\index{setUp@{setUp}!test\_calcy.c@{test\_calcy.c}}
+\doxysubsubsection{\texorpdfstring{setUp()}{setUp()}}
+{\footnotesize\ttfamily void set\+Up (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Set the Up object. 
+
+
+
+Definition at line 26 of file test\+\_\+calcy.\+c.
+
+\mbox{\Hypertarget{test__calcy_8c_a1336e4b2c69a91e9bb40cdd11f32eab9}\label{test__calcy_8c_a1336e4b2c69a91e9bb40cdd11f32eab9}} 
+\index{test\_calcy.c@{test\_calcy.c}!solveQuad@{solveQuad}}
+\index{solveQuad@{solveQuad}!test\_calcy.c@{test\_calcy.c}}
+\doxysubsubsection{\texorpdfstring{solveQuad()}{solveQuad()}}
+{\footnotesize\ttfamily void solve\+Quad (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Test function to test the quadratic euqation solving function. 
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Definition at line 615 of file test\+\_\+calcy.\+c.
+
+\mbox{\Hypertarget{test__calcy_8c_ab09a6457a19510670b369271b988cd8c}\label{test__calcy_8c_ab09a6457a19510670b369271b988cd8c}} 
+\index{test\_calcy.c@{test\_calcy.c}!sub@{sub}}
+\index{sub@{sub}!test\_calcy.c@{test\_calcy.c}}
+\doxysubsubsection{\texorpdfstring{sub()}{sub()}}
+{\footnotesize\ttfamily void sub (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Test function to test the simple integer subtraction. 
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Definition at line 172 of file test\+\_\+calcy.\+c.
+
+\mbox{\Hypertarget{test__calcy_8c_a8c307cd25d2c3db8213c02266a6279df}\label{test__calcy_8c_a8c307cd25d2c3db8213c02266a6279df}} 
+\index{test\_calcy.c@{test\_calcy.c}!subDouble@{subDouble}}
+\index{subDouble@{subDouble}!test\_calcy.c@{test\_calcy.c}}
+\doxysubsubsection{\texorpdfstring{subDouble()}{subDouble()}}
+{\footnotesize\ttfamily void sub\+Double (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Test function to test the simple real number subtraction. 
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Definition at line 262 of file test\+\_\+calcy.\+c.
+
+\mbox{\Hypertarget{test__calcy_8c_ab804e0f66def63262c1d6b4e3d2a2bd7}\label{test__calcy_8c_ab804e0f66def63262c1d6b4e3d2a2bd7}} 
+\index{test\_calcy.c@{test\_calcy.c}!tearDown@{tearDown}}
+\index{tearDown@{tearDown}!test\_calcy.c@{test\_calcy.c}}
+\doxysubsubsection{\texorpdfstring{tearDown()}{tearDown()}}
+{\footnotesize\ttfamily void tear\+Down (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 30 of file test\+\_\+calcy.\+c.
+
+\mbox{\Hypertarget{test__calcy_8c_a42634af4529ce93092e5af6b36b00c96}\label{test__calcy_8c_a42634af4529ce93092e5af6b36b00c96}} 
+\index{test\_calcy.c@{test\_calcy.c}!trigCos@{trigCos}}
+\index{trigCos@{trigCos}!test\_calcy.c@{test\_calcy.c}}
+\doxysubsubsection{\texorpdfstring{trigCos()}{trigCos()}}
+{\footnotesize\ttfamily void trig\+Cos (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Test function to test the sine function. 
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Definition at line 1941 of file test\+\_\+calcy.\+c.
+
+\mbox{\Hypertarget{test__calcy_8c_a75502839febfdb008d8ed112cc58ed74}\label{test__calcy_8c_a75502839febfdb008d8ed112cc58ed74}} 
+\index{test\_calcy.c@{test\_calcy.c}!trigCosec@{trigCosec}}
+\index{trigCosec@{trigCosec}!test\_calcy.c@{test\_calcy.c}}
+\doxysubsubsection{\texorpdfstring{trigCosec()}{trigCosec()}}
+{\footnotesize\ttfamily void trig\+Cosec (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Test function to test the sine function. 
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Definition at line 2121 of file test\+\_\+calcy.\+c.
+
+\mbox{\Hypertarget{test__calcy_8c_aec33c559f9e9715d670c636906379c98}\label{test__calcy_8c_aec33c559f9e9715d670c636906379c98}} 
+\index{test\_calcy.c@{test\_calcy.c}!trigCot@{trigCot}}
+\index{trigCot@{trigCot}!test\_calcy.c@{test\_calcy.c}}
+\doxysubsubsection{\texorpdfstring{trigCot()}{trigCot()}}
+{\footnotesize\ttfamily void trig\+Cot (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Test function to test the sine function. 
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Definition at line 2301 of file test\+\_\+calcy.\+c.
+
+\mbox{\Hypertarget{test__calcy_8c_a3b303a3b7dcad57b7dc36bb5acbd3817}\label{test__calcy_8c_a3b303a3b7dcad57b7dc36bb5acbd3817}} 
+\index{test\_calcy.c@{test\_calcy.c}!trigSec@{trigSec}}
+\index{trigSec@{trigSec}!test\_calcy.c@{test\_calcy.c}}
+\doxysubsubsection{\texorpdfstring{trigSec()}{trigSec()}}
+{\footnotesize\ttfamily void trig\+Sec (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Test function to test the sine function. 
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Definition at line 2211 of file test\+\_\+calcy.\+c.
+
+\mbox{\Hypertarget{test__calcy_8c_acaf25ff6e925a673987d945d60f93a75}\label{test__calcy_8c_acaf25ff6e925a673987d945d60f93a75}} 
+\index{test\_calcy.c@{test\_calcy.c}!trigSin@{trigSin}}
+\index{trigSin@{trigSin}!test\_calcy.c@{test\_calcy.c}}
+\doxysubsubsection{\texorpdfstring{trigSin()}{trigSin()}}
+{\footnotesize\ttfamily void trig\+Sin (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Test function to test the sine function. 
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Definition at line 1851 of file test\+\_\+calcy.\+c.
+
+\mbox{\Hypertarget{test__calcy_8c_ad26f524d5e7c857bad217f52c690730d}\label{test__calcy_8c_ad26f524d5e7c857bad217f52c690730d}} 
+\index{test\_calcy.c@{test\_calcy.c}!trigTan@{trigTan}}
+\index{trigTan@{trigTan}!test\_calcy.c@{test\_calcy.c}}
+\doxysubsubsection{\texorpdfstring{trigTan()}{trigTan()}}
+{\footnotesize\ttfamily void trig\+Tan (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Test function to test the sine function. 
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Construct a new test assert equal object
+
+Definition at line 2031 of file test\+\_\+calcy.\+c.
+

@@ -1,0 +1,304 @@
+\hypertarget{simple__calculations_8c}{}\doxysection{C\+:/\+Users/\+Hrushikar Teja K/\+Desktop/stepin-\/miniproject/3\+\_\+\+Implementation/src/simple\+\_\+calculations.c File Reference}
+\label{simple__calculations_8c}\index{C:/Users/Hrushikar Teja K/Desktop/stepin-\/miniproject/3\_Implementation/src/simple\_calculations.c@{C:/Users/Hrushikar Teja K/Desktop/stepin-\/miniproject/3\_Implementation/src/simple\_calculations.c}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$float.\+h$>$}\newline
+{\ttfamily \#include $<$limits.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}calc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}calcy.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{calcy_8h_ac7659d73a8cdedc08e9f566bb406689c}{error\+\_\+t}} \mbox{\hyperlink{simple__calculations_8c_a3b0e0f4611e547a881cfd07497ec36c6}{check\+Integers}} (int flag)
+\item 
+\mbox{\hyperlink{calcy_8h_ac7659d73a8cdedc08e9f566bb406689c}{error\+\_\+t}} \mbox{\hyperlink{simple__calculations_8c_a8b17e95a6a0505a432e5cab2b23912b1}{check\+Double}} (int flag)
+\item 
+\mbox{\hyperlink{calcy_8h_ac7659d73a8cdedc08e9f566bb406689c}{error\+\_\+t}} \mbox{\hyperlink{simple__calculations_8c_af5a2737aeff2842311046bffbee9315e}{check\+Division}} (int flag)
+\item 
+\mbox{\hyperlink{calcy_8h_ac7659d73a8cdedc08e9f566bb406689c}{error\+\_\+t}} \mbox{\hyperlink{simple__calculations_8c_aea38d76e11842906fc23e0e382a2d053}{add}} (long int $\ast$a, long int $\ast$b, long int $\ast$res)
+\begin{DoxyCompactList}\small\item\em Function to add two integers. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{calcy_8h_ac7659d73a8cdedc08e9f566bb406689c}{error\+\_\+t}} \mbox{\hyperlink{simple__calculations_8c_a8d2da3c466c135c3910c3d42050da3e6}{add\+Double}} (double $\ast$ad, double $\ast$bd, double $\ast$cd)
+\begin{DoxyCompactList}\small\item\em Function to add two real numbers. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{calcy_8h_ac7659d73a8cdedc08e9f566bb406689c}{error\+\_\+t}} \mbox{\hyperlink{simple__calculations_8c_a0f2bff2f6f908b0676f340dfd6e6a3c6}{subtract}} (long int $\ast$a, long int $\ast$b, long int $\ast$res)
+\begin{DoxyCompactList}\small\item\em Function to subtract two integers. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{calcy_8h_ac7659d73a8cdedc08e9f566bb406689c}{error\+\_\+t}} \mbox{\hyperlink{simple__calculations_8c_a340caf428e035d23c006f37490789565}{subtract\+Double}} (double $\ast$ad, double $\ast$bd, double $\ast$cd)
+\begin{DoxyCompactList}\small\item\em Function to subtract two real numbers. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{calcy_8h_ac7659d73a8cdedc08e9f566bb406689c}{error\+\_\+t}} \mbox{\hyperlink{simple__calculations_8c_af96ede4719325af6c31305828205f2c3}{multiply}} (long int $\ast$a, long int $\ast$b, long int $\ast$res)
+\begin{DoxyCompactList}\small\item\em Function to multiply two integers. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{calcy_8h_ac7659d73a8cdedc08e9f566bb406689c}{error\+\_\+t}} \mbox{\hyperlink{simple__calculations_8c_a15c4c46395e44f495623531a54a3a1e0}{multiply\+Double}} (double $\ast$ad, double $\ast$bd, double $\ast$cd)
+\begin{DoxyCompactList}\small\item\em Function to multiply two real numbers. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{calcy_8h_ac7659d73a8cdedc08e9f566bb406689c}{error\+\_\+t}} \mbox{\hyperlink{simple__calculations_8c_ae6a22fb11b6f4ac2a685ef311001fcfc}{divide}} (double $\ast$ad, double $\ast$bd, double $\ast$cd)
+\begin{DoxyCompactList}\small\item\em Function to divide two numbers. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{calcy_8h_ac7659d73a8cdedc08e9f566bb406689c}{error\+\_\+t}} \mbox{\hyperlink{simple__calculations_8c_a433787b378f04ffb5cde677048675cac}{solve\+Quadratic}} (double $\ast$ad, double $\ast$bd, double $\ast$cd, double $\ast$resd1, double $\ast$resd2)
+\begin{DoxyCompactList}\small\item\em Function to find the roots of a quadratic equation given the coefficients. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{simple__calculations_8c_aea38d76e11842906fc23e0e382a2d053}\label{simple__calculations_8c_aea38d76e11842906fc23e0e382a2d053}} 
+\index{simple\_calculations.c@{simple\_calculations.c}!add@{add}}
+\index{add@{add}!simple\_calculations.c@{simple\_calculations.c}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{calcy_8h_ac7659d73a8cdedc08e9f566bb406689c}{error\+\_\+t}} add (\begin{DoxyParamCaption}\item[{long int $\ast$}]{a,  }\item[{long int $\ast$}]{b,  }\item[{long int $\ast$}]{res }\end{DoxyParamCaption})}
+
+
+
+Function to add two integers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+{\em res} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error\+\_\+t 
+\end{DoxyReturn}
+
+
+Definition at line 75 of file simple\+\_\+calculations.\+c.
+
+\mbox{\Hypertarget{simple__calculations_8c_a8d2da3c466c135c3910c3d42050da3e6}\label{simple__calculations_8c_a8d2da3c466c135c3910c3d42050da3e6}} 
+\index{simple\_calculations.c@{simple\_calculations.c}!addDouble@{addDouble}}
+\index{addDouble@{addDouble}!simple\_calculations.c@{simple\_calculations.c}}
+\doxysubsubsection{\texorpdfstring{addDouble()}{addDouble()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{calcy_8h_ac7659d73a8cdedc08e9f566bb406689c}{error\+\_\+t}} add\+Double (\begin{DoxyParamCaption}\item[{double $\ast$}]{ad,  }\item[{double $\ast$}]{bd,  }\item[{double $\ast$}]{cd }\end{DoxyParamCaption})}
+
+
+
+Function to add two real numbers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ad} & \\
+\hline
+{\em bd} & \\
+\hline
+{\em cd} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error\+\_\+t 
+\end{DoxyReturn}
+
+
+Definition at line 95 of file simple\+\_\+calculations.\+c.
+
+\mbox{\Hypertarget{simple__calculations_8c_af5a2737aeff2842311046bffbee9315e}\label{simple__calculations_8c_af5a2737aeff2842311046bffbee9315e}} 
+\index{simple\_calculations.c@{simple\_calculations.c}!checkDivision@{checkDivision}}
+\index{checkDivision@{checkDivision}!simple\_calculations.c@{simple\_calculations.c}}
+\doxysubsubsection{\texorpdfstring{checkDivision()}{checkDivision()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{calcy_8h_ac7659d73a8cdedc08e9f566bb406689c}{error\+\_\+t}} check\+Division (\begin{DoxyParamCaption}\item[{int}]{flag }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error\+\_\+t 
+\end{DoxyReturn}
+
+
+Definition at line 56 of file simple\+\_\+calculations.\+c.
+
+\mbox{\Hypertarget{simple__calculations_8c_a8b17e95a6a0505a432e5cab2b23912b1}\label{simple__calculations_8c_a8b17e95a6a0505a432e5cab2b23912b1}} 
+\index{simple\_calculations.c@{simple\_calculations.c}!checkDouble@{checkDouble}}
+\index{checkDouble@{checkDouble}!simple\_calculations.c@{simple\_calculations.c}}
+\doxysubsubsection{\texorpdfstring{checkDouble()}{checkDouble()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{calcy_8h_ac7659d73a8cdedc08e9f566bb406689c}{error\+\_\+t}} check\+Double (\begin{DoxyParamCaption}\item[{int}]{flag }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error\+\_\+t 
+\end{DoxyReturn}
+
+
+Definition at line 42 of file simple\+\_\+calculations.\+c.
+
+\mbox{\Hypertarget{simple__calculations_8c_a3b0e0f4611e547a881cfd07497ec36c6}\label{simple__calculations_8c_a3b0e0f4611e547a881cfd07497ec36c6}} 
+\index{simple\_calculations.c@{simple\_calculations.c}!checkIntegers@{checkIntegers}}
+\index{checkIntegers@{checkIntegers}!simple\_calculations.c@{simple\_calculations.c}}
+\doxysubsubsection{\texorpdfstring{checkIntegers()}{checkIntegers()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{calcy_8h_ac7659d73a8cdedc08e9f566bb406689c}{error\+\_\+t}} check\+Integers (\begin{DoxyParamCaption}\item[{int}]{flag }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error\+\_\+t 
+\end{DoxyReturn}
+
+
+Definition at line 28 of file simple\+\_\+calculations.\+c.
+
+\mbox{\Hypertarget{simple__calculations_8c_ae6a22fb11b6f4ac2a685ef311001fcfc}\label{simple__calculations_8c_ae6a22fb11b6f4ac2a685ef311001fcfc}} 
+\index{simple\_calculations.c@{simple\_calculations.c}!divide@{divide}}
+\index{divide@{divide}!simple\_calculations.c@{simple\_calculations.c}}
+\doxysubsubsection{\texorpdfstring{divide()}{divide()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{calcy_8h_ac7659d73a8cdedc08e9f566bb406689c}{error\+\_\+t}} divide (\begin{DoxyParamCaption}\item[{double $\ast$}]{ad,  }\item[{double $\ast$}]{bd,  }\item[{double $\ast$}]{cd }\end{DoxyParamCaption})}
+
+
+
+Function to divide two numbers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ad} & \\
+\hline
+{\em bd} & \\
+\hline
+{\em cd} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error\+\_\+t 
+\end{DoxyReturn}
+
+
+Definition at line 195 of file simple\+\_\+calculations.\+c.
+
+\mbox{\Hypertarget{simple__calculations_8c_af96ede4719325af6c31305828205f2c3}\label{simple__calculations_8c_af96ede4719325af6c31305828205f2c3}} 
+\index{simple\_calculations.c@{simple\_calculations.c}!multiply@{multiply}}
+\index{multiply@{multiply}!simple\_calculations.c@{simple\_calculations.c}}
+\doxysubsubsection{\texorpdfstring{multiply()}{multiply()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{calcy_8h_ac7659d73a8cdedc08e9f566bb406689c}{error\+\_\+t}} multiply (\begin{DoxyParamCaption}\item[{long int $\ast$}]{a,  }\item[{long int $\ast$}]{b,  }\item[{long int $\ast$}]{res }\end{DoxyParamCaption})}
+
+
+
+Function to multiply two integers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+{\em res} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error\+\_\+t 
+\end{DoxyReturn}
+
+
+Definition at line 157 of file simple\+\_\+calculations.\+c.
+
+\mbox{\Hypertarget{simple__calculations_8c_a15c4c46395e44f495623531a54a3a1e0}\label{simple__calculations_8c_a15c4c46395e44f495623531a54a3a1e0}} 
+\index{simple\_calculations.c@{simple\_calculations.c}!multiplyDouble@{multiplyDouble}}
+\index{multiplyDouble@{multiplyDouble}!simple\_calculations.c@{simple\_calculations.c}}
+\doxysubsubsection{\texorpdfstring{multiplyDouble()}{multiplyDouble()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{calcy_8h_ac7659d73a8cdedc08e9f566bb406689c}{error\+\_\+t}} multiply\+Double (\begin{DoxyParamCaption}\item[{double $\ast$}]{ad,  }\item[{double $\ast$}]{bd,  }\item[{double $\ast$}]{cd }\end{DoxyParamCaption})}
+
+
+
+Function to multiply two real numbers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ad} & \\
+\hline
+{\em bd} & \\
+\hline
+{\em cd} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error\+\_\+t 
+\end{DoxyReturn}
+
+
+Definition at line 176 of file simple\+\_\+calculations.\+c.
+
+\mbox{\Hypertarget{simple__calculations_8c_a433787b378f04ffb5cde677048675cac}\label{simple__calculations_8c_a433787b378f04ffb5cde677048675cac}} 
+\index{simple\_calculations.c@{simple\_calculations.c}!solveQuadratic@{solveQuadratic}}
+\index{solveQuadratic@{solveQuadratic}!simple\_calculations.c@{simple\_calculations.c}}
+\doxysubsubsection{\texorpdfstring{solveQuadratic()}{solveQuadratic()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{calcy_8h_ac7659d73a8cdedc08e9f566bb406689c}{error\+\_\+t}} solve\+Quadratic (\begin{DoxyParamCaption}\item[{double $\ast$}]{ad,  }\item[{double $\ast$}]{bd,  }\item[{double $\ast$}]{cd,  }\item[{double $\ast$}]{resd1,  }\item[{double $\ast$}]{resd2 }\end{DoxyParamCaption})}
+
+
+
+Function to find the roots of a quadratic equation given the coefficients. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ad} & \\
+\hline
+{\em bd} & \\
+\hline
+{\em cd} & \\
+\hline
+{\em resd1} & \\
+\hline
+{\em resd2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error\+\_\+t 
+\end{DoxyReturn}
+
+
+Definition at line 223 of file simple\+\_\+calculations.\+c.
+
+\mbox{\Hypertarget{simple__calculations_8c_a0f2bff2f6f908b0676f340dfd6e6a3c6}\label{simple__calculations_8c_a0f2bff2f6f908b0676f340dfd6e6a3c6}} 
+\index{simple\_calculations.c@{simple\_calculations.c}!subtract@{subtract}}
+\index{subtract@{subtract}!simple\_calculations.c@{simple\_calculations.c}}
+\doxysubsubsection{\texorpdfstring{subtract()}{subtract()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{calcy_8h_ac7659d73a8cdedc08e9f566bb406689c}{error\+\_\+t}} subtract (\begin{DoxyParamCaption}\item[{long int $\ast$}]{a,  }\item[{long int $\ast$}]{b,  }\item[{long int $\ast$}]{res }\end{DoxyParamCaption})}
+
+
+
+Function to subtract two integers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+{\em res} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error\+\_\+t 
+\end{DoxyReturn}
+
+
+Definition at line 114 of file simple\+\_\+calculations.\+c.
+
+\mbox{\Hypertarget{simple__calculations_8c_a340caf428e035d23c006f37490789565}\label{simple__calculations_8c_a340caf428e035d23c006f37490789565}} 
+\index{simple\_calculations.c@{simple\_calculations.c}!subtractDouble@{subtractDouble}}
+\index{subtractDouble@{subtractDouble}!simple\_calculations.c@{simple\_calculations.c}}
+\doxysubsubsection{\texorpdfstring{subtractDouble()}{subtractDouble()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{calcy_8h_ac7659d73a8cdedc08e9f566bb406689c}{error\+\_\+t}} subtract\+Double (\begin{DoxyParamCaption}\item[{double $\ast$}]{ad,  }\item[{double $\ast$}]{bd,  }\item[{double $\ast$}]{cd }\end{DoxyParamCaption})}
+
+
+
+Function to subtract two real numbers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ad} & \\
+\hline
+{\em bd} & \\
+\hline
+{\em cd} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error\+\_\+t 
+\end{DoxyReturn}
+
+
+Definition at line 136 of file simple\+\_\+calculations.\+c.
+

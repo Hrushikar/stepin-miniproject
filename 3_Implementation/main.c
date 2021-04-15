@@ -33,32 +33,32 @@ void matrixInputInteger(long int** mat1, long int** mat2, int r1, int c1, int r2
 /**
  * @brief function prototype to take input for the matrix of type "double" 
  * 
- * @param matd1 
- * @param matd2 
+ * @param mat1 
+ * @param mat2 
  * @param r1 
  * @param c1 
  * @param r2 
  * @param c2 
  */
-void matrixInputDouble(double** matd1, double** matd2, int r1, int c1, int r2, int c2);
+void matrixInputDouble(double** mat1, double** mat2, int r1, int c1, int r2, int c2);
 
 /**
  * @brief function prototype to print the matrix of type "int"
  * 
- * @param res_mat 
- * @param r3 
- * @param c3 
+ * @param mat 
+ * @param r 
+ * @param c 
  */
-void matrixPrintInteger(long int** res_mat, int r3, int c3);
+void matrixPrintInteger(long int** mat, int r, int c);
 
 /**
  * @brief function prototype to print the matrix of type "double"
  * 
- * @param res_matd 
- * @param r3 
- * @param c3 
+ * @param mat 
+ * @param r 
+ * @param c 
  */
-void matrixPrintDouble(double** res_matd, int r3, int c3);
+void matrixPrintDouble(double** mat, int r, int c);
 
 
 /**
