@@ -376,13 +376,13 @@ void dividede(void){
     b = DBL_MAX;
     a = 0.011;
     TEST_ASSERT_EQUAL(ERROR_OUT_OF_RANGE, divide(&a, &b, &res));
-    TEST_ASSERT_EQUAL(INFINITY, res);
+    TEST_ASSERT_EQUAL(-INFINITY, res);
     // TEST_ASSERT_GREATER_THAN(-42.0, res);
 
     a = -DBL_MAX;
     b = 0.1;
     TEST_ASSERT_EQUAL(ERROR_OUT_OF_RANGE, divide(&a, &b, &res));
-    TEST_ASSERT_EQUAL(INFINITY, res);
+    TEST_ASSERT_EQUAL(-INFINITY, res);
 }
 
 void solveQuad(void){
@@ -392,8 +392,8 @@ void solveQuad(void){
     b = 0.0;
     c = 0.0;
     TEST_ASSERT_EQUAL(ERROR_NO_EQUATION_POSSIBLE, solveQuadratic(&a, &b, &c, &res1, &res2));
-    TEST_ASSERT_EQUAL(INFINITY, res1);
-    TEST_ASSERT_EQUAL(INFINITY, res2);
+    TEST_ASSERT_EQUAL(-INFINITY, res1);
+    TEST_ASSERT_EQUAL(-INFINITY, res2);
 
     a = 1;
     b = 2;
@@ -406,8 +406,8 @@ void solveQuad(void){
     b = 2.45;
     c = 3.0;
     TEST_ASSERT_EQUAL(ERROR_NO_REAL_SOLUTION, solveQuadratic(&a, &b, &c, &res1, &res2));
-    TEST_ASSERT_EQUAL(INFINITY, res1);
-    TEST_ASSERT_EQUAL(INFINITY, res2);
+    TEST_ASSERT_EQUAL(-INFINITY, res1);
+    TEST_ASSERT_EQUAL(-INFINITY, res2);
 
     a = 0.6125;
     b = 3.5;
@@ -420,8 +420,8 @@ void solveQuad(void){
     b = -1;
     c = 1;
     TEST_ASSERT_EQUAL(ERROR_NO_REAL_SOLUTION, solveQuadratic(&a, &b, &c, &res1, &res2));
-    TEST_ASSERT_EQUAL(INFINITY, res1);
-    TEST_ASSERT_EQUAL(INFINITY, res2);
+    TEST_ASSERT_EQUAL(-INFINITY, res1);
+    TEST_ASSERT_EQUAL(-INFINITY, res2);
 
     a = 2;
     b = -1;
@@ -742,15 +742,15 @@ void matAddDouble(void){
     // mat2[2][2] = 0;
 
     TEST_ASSERT_EQUAL(ERROR_OUT_OF_RANGE, matrixSumDouble(mat1, mat2, res_mat, r1, c1, r2, c2, r3, c3));
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[0][0]);
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[0][1]);
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[0][2]);
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[1][0]);
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[1][1]);
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[1][2]);
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[2][0]);
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[2][1]);
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[2][2]);
+    TEST_ASSERT_EQUAL(-INFINITY, res_mat[0][0]);
+    TEST_ASSERT_EQUAL(-INFINITY, res_mat[0][1]);
+    TEST_ASSERT_EQUAL(-INFINITY, res_mat[0][2]);
+    TEST_ASSERT_EQUAL(-INFINITY, res_mat[1][0]);
+    TEST_ASSERT_EQUAL(-INFINITY, res_mat[1][1]);
+    TEST_ASSERT_EQUAL(-INFINITY, res_mat[1][2]);
+    TEST_ASSERT_EQUAL(-INFINITY, res_mat[2][0]);
+    TEST_ASSERT_EQUAL(-INFINITY, res_mat[2][1]);
+    TEST_ASSERT_EQUAL(-INFINITY, res_mat[2][2]);
 }
 
 
@@ -1058,15 +1058,15 @@ void matDiffDouble(void){
     // mat2[2][2] = 0;
 
     TEST_ASSERT_EQUAL(ERROR_OUT_OF_RANGE, matrixDifferenceDouble(mat1, mat2, res_mat, r1, c1, r2, c2, r3, c3));
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[0][0]);
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[0][1]);
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[0][2]);
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[1][0]);
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[1][1]);
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[1][2]);
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[2][0]);
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[2][1]);
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[2][2]);
+    TEST_ASSERT_EQUAL(-INFINITY, res_mat[0][0]);
+    TEST_ASSERT_EQUAL(-INFINITY, res_mat[0][1]);
+    TEST_ASSERT_EQUAL(-INFINITY, res_mat[0][2]);
+    TEST_ASSERT_EQUAL(-INFINITY, res_mat[1][0]);
+    TEST_ASSERT_EQUAL(-INFINITY, res_mat[1][1]);
+    TEST_ASSERT_EQUAL(-INFINITY, res_mat[1][2]);
+    TEST_ASSERT_EQUAL(-INFINITY, res_mat[2][0]);
+    TEST_ASSERT_EQUAL(-INFINITY, res_mat[2][1]);
+    TEST_ASSERT_EQUAL(-INFINITY, res_mat[2][2]);
 }
 
 
@@ -1375,15 +1375,15 @@ void matMulDouble(void){
     // mat2[2][2] = 0;
 
     TEST_ASSERT_EQUAL(ERROR_OUT_OF_RANGE, matrixProductDouble(mat1, mat2, res_mat, r1, c1, r2, c2, r3, c3));
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[0][0]);
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[0][1]);
-    // TEST_ASSERT_EQUAL(INFINITY, res_mat[0][2]);
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[1][0]);
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[1][1]);
-    // TEST_ASSERT_EQUAL(INFINITY, res_mat[1][2]);
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[2][0]);
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[2][1]);
-    // TEST_ASSERT_EQUAL(INFINITY, res_mat[2][2]);
+    TEST_ASSERT_EQUAL(-INFINITY, res_mat[0][0]);
+    TEST_ASSERT_EQUAL(-INFINITY, res_mat[0][1]);
+    // TEST_ASSERT_EQUAL(-INFINITY, res_mat[0][2]);
+    TEST_ASSERT_EQUAL(-INFINITY, res_mat[1][0]);
+    TEST_ASSERT_EQUAL(-INFINITY, res_mat[1][1]);
+    // TEST_ASSERT_EQUAL(-INFINITY, res_mat[1][2]);
+    TEST_ASSERT_EQUAL(-INFINITY, res_mat[2][0]);
+    TEST_ASSERT_EQUAL(-INFINITY, res_mat[2][1]);
+    // TEST_ASSERT_EQUAL(-INFINITY, res_mat[2][2]);
 
 }
 
