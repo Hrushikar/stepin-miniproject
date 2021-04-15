@@ -413,12 +413,12 @@ error_t divide(double* ad, double* bd, double* cd){
     // }
     if(((DBL_MAX==(*ad) && 1>(*bd)) || (DBL_MAX==(*bd) && 1>(*ad))) || ((-DBL_MAX==(*ad) && 1>(*bd)) || (-DBL_MAX==(*bd) && 1>(*ad)))){
         flag = 1;
-        *cd = OVERFLOW;
+        *cd = INFINITY;
         return checkDivision(flag);
     }
     if((*bd)==0){
         flag = 2;
-        *cd = UNDERFLOW;
+        *cd = -INFINITY;
         return checkDivision(flag);
     }
     // if(flag==0){
@@ -449,8 +449,8 @@ error_t solveQuadratic(double* ad, double* bd, double* cd, double* resd1, double
     // double x2 = (-1)*(*b);
 
     if(0==(*ad) && 0==(*bd) && 0==(*cd)){
-        *resd1 = UNDERFLOW;
-        *resd2 = UNDERFLOW;
+        *resd1 = INFINITY;
+        *resd2 = INFINITY;
         return ERROR_NO_EQUATION_POSSIBLE;
     }
     
@@ -473,8 +473,8 @@ error_t solveQuadratic(double* ad, double* bd, double* cd, double* resd1, double
         // printf("\nNo real solutions are possible for the given set of coefficients\n");
         // printf("\nExiting in 5 seconds...");
         // delay(5);
-        *resd1 = UNDERFLOW;
-        *resd2 = UNDERFLOW;
+        *resd1 = INFINITY;
+        *resd2 = INFINITY;
         return ERROR_NO_REAL_SOLUTION;
     }
     // else if(discriminant==0){
