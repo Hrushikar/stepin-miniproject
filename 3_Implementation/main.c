@@ -11,7 +11,7 @@
 
 #include<stdio.h>
 #include<stdlib.h>
-#include "matrixIO.c"
+#include "./src/matrixIO.c"
 #include "calcy.h"
 #include "calc.h"
 #include "matrix.h"
