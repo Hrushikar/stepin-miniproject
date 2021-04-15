@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include "matrix.h"
+#include "../inc/matrix.h"
 
 
 void matrixInputInteger(long int** mat1, long int** mat2, int r1, int c1, int r2, int c2){
