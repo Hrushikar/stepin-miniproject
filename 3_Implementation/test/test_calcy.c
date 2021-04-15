@@ -173,6 +173,11 @@ void sub(void){
     TEST_ASSERT_EQUAL(ERROR_OUT_OF_RANGE, subtract(&a, &b, &res));
     TEST_ASSERT_EQUAL(1, res);
 
+    a = LONG_MAX;
+    b = LONG_MIN;
+    TEST_ASSERT_EQUAL(ERROR_OUT_OF_RANGE, subtract(&a, &b, &res));
+    TEST_ASSERT_EQUAL(-1, res);
+
     // a = LONG_MAX+1;
     // b = LONG_MIN;
     // TEST_ASSERT_EQUAL(ERROR_OUT_OF_RANGE, subtract(&a, &b, &res));

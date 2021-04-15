@@ -227,17 +227,23 @@ error_t subtract(long int* a, long int* b, long int* res){
     //     }
     // }
     int flag = 0;
-    if((*a)<0 && (*b)>0){
-        if((*a)-(*b)>0){
-            flag = 1;
-            // *res = (*a) + (*b);
-        }
+    // if((*a)<0 && (*b)>0){
+    //     if((*a)-(*b)>0){
+    //         flag = 1;
+    //         // *res = (*a) + (*b);
+    //     }
+    // }
+    // else if((*a)>0 && (*b)<0){
+    //     if(((*a)-(*b))<0){
+    //         flag = 1;
+    //         // *res = (*a) + (*b);
+    //     }
+    // }
+    if(LONG_MAX==(*a) && LONG_MIN==(*b)){
+        flag = 1;
     }
-    else if((*a)>0 && (*b)<0){
-        if(((*a)-(*b))<0){
-            flag = 1;
-            // *res = (*a) + (*b);
-        }
+    else if(LONG_MIN==(*a) && LONG_MAX==(*b)){
+        flag = 1;
     }
     // else{
     *res = (*a) - (*b);
