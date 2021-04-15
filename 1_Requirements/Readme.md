@@ -37,7 +37,7 @@ The application focuses on simple mathematical operations, matrices & trigonomet
 
 
 # SWOT Analysis:
-![SWOT image](https://github.com/Hrushikar/stepin-miniproject/tree/main/1_Requirements/SWOT.png)
+![SWOT image](./SWOT.png)
 
 
 # 4 W's and 1 H:
