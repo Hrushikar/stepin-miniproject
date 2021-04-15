@@ -1,11 +1,11 @@
 #include<stdlib.h>
 #include<limits.h>
 #include<float.h>
-#include "calc.h"
-#include "calcy.h"
-#include "matrix.h"
-#include "trigonometry.h"
-#include "unity.h"
+#include "../inc/calc.h"
+#include "../inc/calcy.h"
+#include "../inc/matrix.h"
+#include "../inc/trigonometry.h"
+#include "../unity/unity.h"
 // #include "../main.c"
 
 /* Required by the unity test framework */
@@ -588,15 +588,15 @@ void matAdd(void){
     // mat2[2][2] = 0;
 
     TEST_ASSERT_EQUAL(ERROR_OUT_OF_RANGE, matrixSum(mat1, mat2, res_mat, r1, c1, r2, c2, r3, c3));
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[0][0]);
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[0][1]);
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[0][2]);
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[1][0]);
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[1][1]);
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[1][2]);
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[2][0]);
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[2][1]);
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[2][2]);
+    TEST_ASSERT_EQUAL((long int)INFINITY, res_mat[0][0]);
+    TEST_ASSERT_EQUAL((long int)INFINITY, res_mat[0][1]);
+    TEST_ASSERT_EQUAL((long int)INFINITY, res_mat[0][2]);
+    TEST_ASSERT_EQUAL((long int)INFINITY, res_mat[1][0]);
+    TEST_ASSERT_EQUAL((long int)INFINITY, res_mat[1][1]);
+    TEST_ASSERT_EQUAL((long int)INFINITY, res_mat[1][2]);
+    TEST_ASSERT_EQUAL((long int)INFINITY, res_mat[2][0]);
+    TEST_ASSERT_EQUAL((long int)INFINITY, res_mat[2][1]);
+    TEST_ASSERT_EQUAL((long int)INFINITY, res_mat[2][2]);
 
 }
 
@@ -904,15 +904,15 @@ void matDiff(void){
     // mat2[2][2] = 0;
 
     TEST_ASSERT_EQUAL(ERROR_OUT_OF_RANGE, matrixDifference(mat1, mat2, res_mat, r1, c1, r2, c2, r3, c3));
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[0][0]);
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[0][1]);
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[0][2]);
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[1][0]);
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[1][1]);
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[1][2]);
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[2][0]);
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[2][1]);
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[2][2]);
+    TEST_ASSERT_EQUAL((long int)INFINITY, res_mat[0][0]);
+    TEST_ASSERT_EQUAL((long int)INFINITY, res_mat[0][1]);
+    TEST_ASSERT_EQUAL((long int)INFINITY, res_mat[0][2]);
+    TEST_ASSERT_EQUAL((long int)INFINITY, res_mat[1][0]);
+    TEST_ASSERT_EQUAL((long int)INFINITY, res_mat[1][1]);
+    TEST_ASSERT_EQUAL((long int)INFINITY, res_mat[1][2]);
+    TEST_ASSERT_EQUAL((long int)INFINITY, res_mat[2][0]);
+    TEST_ASSERT_EQUAL((long int)INFINITY, res_mat[2][1]);
+    TEST_ASSERT_EQUAL((long int)INFINITY, res_mat[2][2]);
 
 }
 
@@ -1221,15 +1221,15 @@ void matMul(void){
     // mat2[2][2] = 0;
 
     TEST_ASSERT_EQUAL(ERROR_OUT_OF_RANGE, matrixProduct(mat1, mat2, res_mat, r1, c1, r2, c2, r3, c3));
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[0][0]);
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[0][1]);
-    // TEST_ASSERT_EQUAL(INFINITY, res_mat[0][2]);
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[1][0]);
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[1][1]);
-    // TEST_ASSERT_EQUAL(INFINITY, res_mat[1][2]);
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[2][0]);
-    TEST_ASSERT_EQUAL(INFINITY, res_mat[2][1]);
-    // TEST_ASSERT_EQUAL(INFINITY, res_mat[2][2]);
+    TEST_ASSERT_EQUAL((long int)INFINITY, res_mat[0][0]);
+    TEST_ASSERT_EQUAL((long int)INFINITY, res_mat[0][1]);
+    // TEST_ASSERT_EQUAL((long int)INFINITY, res_mat[0][2]);
+    TEST_ASSERT_EQUAL((long int)INFINITY, res_mat[1][0]);
+    TEST_ASSERT_EQUAL((long int)INFINITY, res_mat[1][1]);
+    // TEST_ASSERT_EQUAL((long int)INFINITY, res_mat[1][2]);
+    TEST_ASSERT_EQUAL((long int)INFINITY, res_mat[2][0]);
+    TEST_ASSERT_EQUAL((long int)INFINITY, res_mat[2][1]);
+    // TEST_ASSERT_EQUAL((long int)INFINITY, res_mat[2][2]);
 
 }
 

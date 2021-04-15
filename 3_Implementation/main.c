@@ -33,10 +33,10 @@
 // void multiplyDouble(void);
 // void divide(void);
 
-void matrixInputInteger(long int** mat1, long int** mat2, int r1, int c1, int r2, int c2);
-void matrixInputDouble(double** matd1, double** matd2, int r1, int c1, int r2, int c2);
-void matrixPrintInteger(long int** res_mat, int r3, int c3);
-void matrixPrintDouble(double** res_matd, int r3, int c3);
+// void matrixInputInteger(long int** mat1, long int** mat2, int r1, int c1, int r2, int c2);
+// void matrixInputDouble(double** matd1, double** matd2, int r1, int c1, int r2, int c2);
+// void matrixPrintInteger(long int** res_mat, int r3, int c3);
+// void matrixPrintDouble(double** res_matd, int r3, int c3);
 
 
 int main(){
