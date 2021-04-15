@@ -137,6 +137,7 @@ int main(){
                         break;
             
                     default:
+                        printf("\nSorry. Value not accepted\n");
                         break;
                 }
                 break;
@@ -181,6 +182,7 @@ int main(){
                         break;
 
                     default:
+                        printf("\nSorry. Value not accepted\n");
                         break;
                 }
                 break;
@@ -226,6 +228,7 @@ int main(){
                         break;
 
                     default:
+                        printf("\nSorry. Value not accepted\n");
                         break;
                 }
                 break;
@@ -277,6 +280,7 @@ int main(){
                 break;
 
             default:
+                printf("\nSorry. Value not accepted\n");
                 break;
         }
         break;
@@ -392,6 +396,7 @@ int main(){
                     break;
             
                 default:
+                    printf("\nSorry. Value not accepted\n");
                     break;
             }
             break;
@@ -498,6 +503,7 @@ int main(){
                     break;
             
                 default:
+                    printf("\nSorry. Value not accepted\n");
                     break;
             }
             break;
@@ -604,6 +610,7 @@ int main(){
                     break;
             
                 default:
+                    printf("\nSorry. Value not accepted\n");
                     break;
             }
             break;
@@ -690,12 +697,14 @@ int main(){
                     break;
             
                 default:
+                    printf("\nSorry. Value not accepted\n");
                     break;
             }
 
             break;
         
         default:
+            printf("\nSorry. Value not accepted\n");
             break;
         }
 
@@ -780,12 +789,14 @@ int main(){
                 break;
 
             default:
+                printf("\nSorry. Value not accepted\n");
                 break;
         }
 
         break;
 
     default:
+        printf("\nSorry. Value not accepted\n");
         break;
     }
     return 0;
