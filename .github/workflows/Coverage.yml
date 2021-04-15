@@ -1,4 +1,4 @@
-name: CI-Coverage
+name: Coverage
  
 on:
   push:
@@ -17,5 +17,5 @@ jobs:
       run: sudo apt -y install gcovr
     - name: make coverage
       run: make -C 3_Implementation/ coverage
-    - name: GCov only
+    - name: GCov Report
       run:  gcovr -r .
