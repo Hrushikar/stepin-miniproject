@@ -3,9 +3,9 @@ TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
 BUILD_DIR = Build
 
-SRC=./src/simple_calculations.c\
-./src/matrix_calculations.c\
-./src/trigonometric_calculations.c
+SRC=src/simple_calculations.c\
+src/matrix_calculations.c\
+src/trigonometric_calculations.c
 
 # ./src/timeDelay.c
 
@@ -56,6 +56,7 @@ sani: $(SRC) $(TEST)
 
 doc:
 	make -C doc
+
 $(BUILD_DIR):
 	mkdir $(BUILD_DIR)
 

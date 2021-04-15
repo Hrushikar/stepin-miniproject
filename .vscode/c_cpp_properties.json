@@ -4,7 +4,9 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "${workspaceFolder}/inc"
+                "${workspaceFolder}/3_Implementation/src",
+                "${workspaceFolder}/3_Implementation/inc",
+                "${workspaceFolder}/3_Implementation/unity"
             ],
             "defines": [
                 "_DEBUG",
