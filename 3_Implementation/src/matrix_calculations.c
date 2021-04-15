@@ -106,7 +106,7 @@ error_t matrixSum(long int** mat1, long int** mat2, long int** res_mat, int r1, 
     if(r1!=r2 || c1!=c2){
         for(int i=0; i<r1; i++){
             for(int j=0; j<c1; j++){
-                res_mat[i][j] = INFINITY;
+                res_mat[i][j] = (long int)INFINITY;
             }
         }
         return ERROR_OUT_OF_RANGE;
@@ -329,7 +329,7 @@ error_t matrixDifference(long int** mat1, long int** mat2, long int** res_mat, i
     if(r1!=r2 || c1!=c2){
         for(int i=0; i<r1; i++){
             for(int j=0; j<c1; j++){
-                res_mat[i][j] = INFINITY;
+                res_mat[i][j] = (long int)INFINITY;
             }
         }
         return ERROR_OUT_OF_RANGE;
@@ -504,7 +504,7 @@ error_t matrixProduct(long int** mat1, long int** mat2, long int** res_mat, int 
     if(c1!=r2){
         for(int i=0; i<r3; i++){
             for(int j=0; j<c3; j++){
-                res_mat[i][j] = INFINITY;
+                res_mat[i][j] = (long int)INFINITY;
             }
         }
         return ERROR_OUT_OF_RANGE;
